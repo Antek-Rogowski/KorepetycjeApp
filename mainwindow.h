@@ -28,6 +28,8 @@ private slots:
     void on_sendMessageButton_clicked();
     void on_cameraButton_clicked();
 
+    void on_muteButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     AuthManager authManager;
@@ -35,6 +37,9 @@ private:
 
     // Wskaźnik na nasz rurociąg wideo GStreamer
     GstElement *videoPipeline = nullptr;
+    GstElement *audioPipeline = nullptr;
+    GstElement *audioTransPipeline = nullptr; // Dodaj to
+    GstElement *videoTransPipeline = nullptr; // <--- Dodajemy potok nadawczy wideo
 
     void populateCalendar();
     void initVideo();

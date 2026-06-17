@@ -76,3 +76,8 @@ void P2PChatTool::stop() {
     }
     qDebug() << "[P2P] Gniazda sieciowe bezpiecznie zamknięte.";
 }
+
+bool P2PChatTool::isServerInstance() const {
+    // Jeśli nasz serwer nasłuchuje na porcie 12345, to my jesteśmy główną instancją (A)
+    return (tcpServer->isListening() && tcpServer->serverPort() == 12345);
+}

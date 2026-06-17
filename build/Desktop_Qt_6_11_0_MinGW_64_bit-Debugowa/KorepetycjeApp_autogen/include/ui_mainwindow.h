@@ -59,6 +59,7 @@ public:
     QPushButton *muteButton;
     QPushButton *cameraButton;
     QPushButton *endCallButton;
+    QLabel *localVideoLabel;
     QWidget *widget_2;
     QVBoxLayout *verticalLayout_2;
     QPlainTextEdit *chatHistoryTextEdit;
@@ -151,6 +152,7 @@ public:
 
         widget_4 = new QWidget(widget_3);
         widget_4->setObjectName("widget_4");
+        widget_4->setMaximumSize(QSize(16777215, 100));
         horizontalLayout_3 = new QHBoxLayout(widget_4);
         horizontalLayout_3->setObjectName("horizontalLayout_3");
         muteButton = new QPushButton(widget_4);
@@ -168,6 +170,13 @@ public:
         endCallButton->setStyleSheet(QString::fromUtf8("color: red;"));
 
         horizontalLayout_3->addWidget(endCallButton);
+
+        localVideoLabel = new QLabel(widget_4);
+        localVideoLabel->setObjectName("localVideoLabel");
+        localVideoLabel->setMaximumSize(QSize(160, 120));
+        localVideoLabel->setStyleSheet(QString::fromUtf8("background-color: #333333;"));
+
+        horizontalLayout_3->addWidget(localVideoLabel);
 
 
         verticalLayout_3->addWidget(widget_4);
@@ -233,6 +242,7 @@ public:
         muteButton->setText(QCoreApplication::translate("MainWindow", "Wycisz", nullptr));
         cameraButton->setText(QCoreApplication::translate("MainWindow", "Wy\305\202\304\205cz kamer\304\231", nullptr));
         endCallButton->setText(QCoreApplication::translate("MainWindow", "Zako\305\204cz po\305\202\304\205czenie", nullptr));
+        localVideoLabel->setText(QString());
         sendMessageButton->setText(QCoreApplication::translate("MainWindow", "Wy\305\233lij", nullptr));
     } // retranslateUi
 

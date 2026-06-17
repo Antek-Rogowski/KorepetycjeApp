@@ -233,6 +233,50 @@ CMakeFiles/KorepetycjeApp.dir/mainwindow.cpp.obj: \
  C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstparse.h \
  C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstvecdeque.h \
  C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstcompat.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/videooverlay.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/gstvideosink.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/base/gstbasesink.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/base/base-prelude.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/video.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/video-prelude.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/video-format.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/video-enumtypes.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/video-tile.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/video-chroma.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/video-color.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/video-dither.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/video-info.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/video-frame.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/video-converter.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/video-scaler.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/video-resampler.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/video-multiview.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/video-info-dma.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/colorbalancechannel.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/colorbalance.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/gstvideoaffinetransformationmeta.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/gstvideoaggregator.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/base/gstaggregator.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/gstvideocodecalphameta.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/gstvideodecoder.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/base/gstadapter.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/gstvideoutils.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/video-hdr.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/gstvideoencoder.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/gstvideofilter.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/base/gstbasetransform.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/gstvideometa.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/gstvideotimecode.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/gstvideopool.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/navigation.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/video-anc.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/video-blend.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/videodirection.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/video-event.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/videoorientation.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/video-overlay-composition.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/video-sei.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/video/gstvideodmabufpool.h \
  C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\mainwindow.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qmainwindow.h \

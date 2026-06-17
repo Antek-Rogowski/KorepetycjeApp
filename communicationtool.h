@@ -14,6 +14,7 @@ public:
 
     void start();
     void stop();
+    bool isServerInstance() const; // Zwraca true, jeśli zajęliśmy port główny (jesteśmy Serwerem)
     void sendMessage(const QString& message);
 
     // Sygnały, które wyślemy do GUI (MainWindow), gdy coś przyjdzie z sieci

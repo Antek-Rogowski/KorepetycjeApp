@@ -413,6 +413,11 @@
 			},
 			{
 				"backtrace" : 3,
+				"fragment" : "-lgstvideo-1.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
 				"fragment" : "-lglib-2.0",
 				"role" : "libraries"
 			},

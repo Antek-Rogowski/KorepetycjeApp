@@ -54,6 +54,7 @@ target_link_libraries(KorepetycjeApp PRIVATE
     Qt${QT_VERSION_MAJOR}::Widgets
     Qt${QT_VERSION_MAJOR}::Network
     gstreamer-1.0
+    gstvideo-1.0   # <--- ZAKTUALIZOWANA NAZWA
     glib-2.0
     gobject-2.0
 )
