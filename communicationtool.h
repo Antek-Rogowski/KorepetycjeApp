@@ -1,50 +1,34 @@
 #ifndef COMMUNICATIONTOOL_H
 #define COMMUNICATIONTOOL_H
 
+#include <QObject>
+#include <QTcpServer>
+#include <QTcpSocket>
 #include <QString>
-#include <QDebug>
 
-// Interfejs narzędzia komunikacyjnego (czysta abstrakcja)
-class ICommunicationTool {
+class P2PChatTool : public QObject {
+    Q_OBJECT // Wymagane dla mechanizmu sygnałów i slotów
 public:
-    virtual ~ICommunicationTool() = default;
+    explicit P2PChatTool(QObject* parent = nullptr);
+    ~P2PChatTool();
 
-    // Czysto wirtualne metody, które narzucają kontrakt dla klas pochodnych
-    virtual void start() = 0;
-    virtual void stop() = 0;
-    virtual bool isConnected() const = 0;
-    virtual QString getToolName() const = 0;
-};
-
-// Implementacja: Czat tekstowy P2P
-class P2PChatTool : public ICommunicationTool {
-private:
-    bool connectedStatus;
-
-public:
-    P2PChatTool();
-
-    void start() override;
-    void stop() override;
-    bool isConnected() const override;
-    QString getToolName() const override;
-
-    // Metoda specyficzna tylko dla czatu
+    void start();
+    void stop();
     void sendMessage(const QString& message);
-};
 
-// Implementacja: Strumieniowanie Wideo/Audio
-class VideoStreamTool : public ICommunicationTool {
+    // Sygnały, które wyślemy do GUI (MainWindow), gdy coś przyjdzie z sieci
+signals:
+    void messageReceived(const QString& message);
+    void connectionEstablished();
+
+    // Wewnętrzne sloty do obsługi zdarzeń gniazd TCP
+private slots:
+    void onNewConnection();
+    void onReadyRead();
+
 private:
-    bool streamingStatus;
-
-public:
-    VideoStreamTool();
-
-    void start() override;
-    void stop() override;
-    bool isConnected() const override;
-    QString getToolName() const override;
+    QTcpServer* tcpServer;
+    QTcpSocket* tcpSocket;
 };
 
 #endif // COMMUNICATIONTOOL_H

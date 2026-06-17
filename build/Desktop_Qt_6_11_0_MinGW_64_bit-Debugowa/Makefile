@@ -223,6 +223,30 @@ KorepetycjeApp_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\KorepetycjeApp.dir\build.make CMakeFiles/KorepetycjeApp.dir/KorepetycjeApp_autogen/mocs_compilation.cpp.s
 .PHONY : KorepetycjeApp_autogen/mocs_compilation.cpp.s
 
+authmanager.obj: authmanager.cpp.obj
+.PHONY : authmanager.obj
+
+# target to build an object file
+authmanager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\KorepetycjeApp.dir\build.make CMakeFiles/KorepetycjeApp.dir/authmanager.cpp.obj
+.PHONY : authmanager.cpp.obj
+
+authmanager.i: authmanager.cpp.i
+.PHONY : authmanager.i
+
+# target to preprocess a source file
+authmanager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\KorepetycjeApp.dir\build.make CMakeFiles/KorepetycjeApp.dir/authmanager.cpp.i
+.PHONY : authmanager.cpp.i
+
+authmanager.s: authmanager.cpp.s
+.PHONY : authmanager.s
+
+# target to generate assembly for a file
+authmanager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\KorepetycjeApp.dir\build.make CMakeFiles/KorepetycjeApp.dir/authmanager.cpp.s
+.PHONY : authmanager.cpp.s
+
 communicationtool.obj: communicationtool.cpp.obj
 .PHONY : communicationtool.obj
 
@@ -385,6 +409,9 @@ help:
 	@echo ... KorepetycjeApp_autogen/mocs_compilation.obj
 	@echo ... KorepetycjeApp_autogen/mocs_compilation.i
 	@echo ... KorepetycjeApp_autogen/mocs_compilation.s
+	@echo ... authmanager.obj
+	@echo ... authmanager.i
+	@echo ... authmanager.s
 	@echo ... communicationtool.obj
 	@echo ... communicationtool.i
 	@echo ... communicationtool.s

@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "KorepetycjeApp_autogen"
   "CMakeFiles/KorepetycjeApp.dir/KorepetycjeApp_autogen/mocs_compilation.cpp.obj"
   "CMakeFiles/KorepetycjeApp.dir/KorepetycjeApp_autogen/mocs_compilation.cpp.obj.d"
+  "CMakeFiles/KorepetycjeApp.dir/authmanager.cpp.obj"
+  "CMakeFiles/KorepetycjeApp.dir/authmanager.cpp.obj.d"
   "CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.obj"
   "CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.obj.d"
   "CMakeFiles/KorepetycjeApp.dir/main.cpp.obj"
