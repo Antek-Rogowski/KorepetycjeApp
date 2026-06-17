@@ -10,6 +10,7 @@
 #include <QNetworkDatagram>
 #include <QJsonObject>
 #include <QJsonDocument>
+#include <QJsonArray>
 
 class P2PChatTool : public QObject {
     Q_OBJECT // Wymagane dla mechanizmu sygnałów i slotów
@@ -26,11 +27,17 @@ public:
     void setMyName(const QString& name) { myIdentity = name; }
     QString getMyName() const { return myIdentity; }
 
+    void sendInvite(const QString& targetName, const QString& subject, const QJsonArray& slots);
+    void sendAccept(const QString& targetName, const QString& chosenTime);
+
     // Sygnały, które wyślemy do GUI (MainWindow), gdy coś przyjdzie z sieci
 signals:
     void messageReceived(const QString& message);
     void connectionEstablished();
     void userDiscovered(const QString& name, const QHostAddress& ip, quint16 port);
+
+    void inviteReceived(const QString& from, const QString& subject, const QJsonArray& timeSlots);
+    void inviteAccepted(const QString& from, const QString& chosenTime);
 
 private slots:
     void onNewConnection();

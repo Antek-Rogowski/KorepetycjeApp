@@ -1,5 +1,6 @@
 C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debugowa/KorepetycjeApp_autogen/EWIEGA46WW/moc_communicationtool.cpp: C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/communicationtool.h \
   C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debugowa/KorepetycjeApp_autogen/moc_predefs.h \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/QJsonArray \
   C:/Qt/6.11.0/mingw_64/include/QtCore/QJsonDocument \
   C:/Qt/6.11.0/mingw_64/include/QtCore/QJsonObject \
   C:/Qt/6.11.0/mingw_64/include/QtCore/QObject \
@@ -62,6 +63,7 @@ C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/build/Desktop_Qt_6_11_0_MinGW_64_
   C:/Qt/6.11.0/mingw_64/include/QtCore/qiodevicebase.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qiterable.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qiterator.h \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/qjsonarray.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qjsondocument.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qjsonobject.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qjsonparseerror.h \

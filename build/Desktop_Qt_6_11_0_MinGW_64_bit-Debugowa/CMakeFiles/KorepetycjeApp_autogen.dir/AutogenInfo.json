@@ -381,6 +381,12 @@
 			null
 		],
 		[
+			"C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/databasemanager.h",
+			"MU",
+			"EWIEGA46WW/moc_databasemanager.cpp",
+			null
+		],
+		[
 			"C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
@@ -470,6 +476,11 @@
 		],
 		[
 			"C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/communicationtool.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/databasemanager.cpp",
 			"MU",
 			null
 		],

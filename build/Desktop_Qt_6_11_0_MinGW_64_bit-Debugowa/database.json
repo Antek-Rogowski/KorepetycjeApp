@@ -1,0 +1,37 @@
+{
+    "users": {
+        "Antoni": {
+            "availability": [
+                "Poniedziałek 16:00",
+                "Poniedziałek 17:00",
+                "Poniedziałek 18:00",
+                "Wtorek 18:00"
+            ],
+            "meetings": [
+                {
+                    "subject": "Korepetycje C++ (GStreamer)",
+                    "time": "Poniedziałek 18:00",
+                    "with": "Kama"
+                }
+            ],
+            "password": "admin",
+            "role": "tutor"
+        },
+        "Kama": {
+            "availability": [
+                "Poniedziałek 18:00",
+                "Poniedziałek 19:00",
+                "Środa 16:00"
+            ],
+            "meetings": [
+                {
+                    "subject": "Korepetycje C++ (GStreamer)",
+                    "time": "Poniedziałek 18:00",
+                    "with": "Antoni"
+                }
+            ],
+            "password": "admin",
+            "role": "student"
+        }
+    }
+}

@@ -36,7 +36,9 @@ set(PROJECT_SOURCES
         communicationtool.h
 )
 
-add_executable(KorepetycjeApp ${PROJECT_SOURCES})
+add_executable(KorepetycjeApp ${PROJECT_SOURCES}
+    databasemanager.h
+    databasemanager.cpp)
 
 # --- KONFIGURACJA GSTREAMER ---
 # Dołączamy foldery z nagłówkami (.h)

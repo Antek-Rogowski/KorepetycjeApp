@@ -376,4 +376,6 @@ CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.obj: \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qjsondocument.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qjsonparseerror.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/QJsonDocument \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QJsonArray \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qjsonarray.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/QDebug

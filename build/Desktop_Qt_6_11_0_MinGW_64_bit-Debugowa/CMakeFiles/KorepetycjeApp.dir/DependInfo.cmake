@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debugowa/KorepetycjeApp_autogen/mocs_compilation.cpp" "CMakeFiles/KorepetycjeApp.dir/KorepetycjeApp_autogen/mocs_compilation.cpp.obj" "gcc" "CMakeFiles/KorepetycjeApp.dir/KorepetycjeApp_autogen/mocs_compilation.cpp.obj.d"
   "C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/authmanager.cpp" "CMakeFiles/KorepetycjeApp.dir/authmanager.cpp.obj" "gcc" "CMakeFiles/KorepetycjeApp.dir/authmanager.cpp.obj.d"
   "C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/communicationtool.cpp" "CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.obj" "gcc" "CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.obj.d"
+  "C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/databasemanager.cpp" "CMakeFiles/KorepetycjeApp.dir/databasemanager.cpp.obj" "gcc" "CMakeFiles/KorepetycjeApp.dir/databasemanager.cpp.obj.d"
   "C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/main.cpp" "CMakeFiles/KorepetycjeApp.dir/main.cpp.obj" "gcc" "CMakeFiles/KorepetycjeApp.dir/main.cpp.obj.d"
   "C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/mainwindow.cpp" "CMakeFiles/KorepetycjeApp.dir/mainwindow.cpp.obj" "gcc" "CMakeFiles/KorepetycjeApp.dir/mainwindow.cpp.obj.d"
   )

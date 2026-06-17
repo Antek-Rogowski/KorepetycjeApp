@@ -2,17 +2,14 @@
 #include <QDebug>
 
 P2PChatTool::P2PChatTool(QObject *parent) : QObject(parent) {
-    // Inicjalizacja gniazda
+    // 1. BEZPIECZNE WSKAŹNIKI TCP (Rozwiązanie Twojego błędu!)
+    tcpServer = new QTcpServer(this);
+    tcpSocket = nullptr;
+
+    // 2. RADAR UDP (Praca w tle)
     discoverySocket = new QUdpSocket(this);
-
-    // --- WŁĄCZAMY RADAR W TLE OD RAZU PO URUCHOMIENIU ---
-    // Wiążemy gniazdo z portem 45454 i pozwalamy innym instancjom go współdzielić
     discoverySocket->bind(QHostAddress::AnyIPv4, 45454, QUdpSocket::ShareAddress | QUdpSocket::ReuseAddressHint);
-
-    // Zapisujemy się do wirtualnego pokoju Multicast
     discoverySocket->joinMulticastGroup(QHostAddress("239.255.43.21"));
-
-    // Podpinamy sygnał odbioru pod naszą funkcję przetwarzającą
     connect(discoverySocket, &QUdpSocket::readyRead, this, &P2PChatTool::processDiscoveryDatagrams);
 
     qDebug() << "[Radar] Nasłuch Multicast uruchomiony w tle.";
@@ -23,6 +20,11 @@ P2PChatTool::~P2PChatTool() {
 }
 
 void P2PChatTool::start() {
+    // Dodatkowa tarcza ochronna, gdyby serwer został zniszczony podczas zamykania poprzedniej rozmowy
+    if (!tcpServer) {
+        tcpServer = new QTcpServer(this);
+    }
+
     if (tcpServer->isListening()) return;
 
     // ZESTAWIENIE "CIĘŻKIEGO" GNIAZDA TCP (Czat i Wideo)
@@ -34,7 +36,7 @@ void P2PChatTool::start() {
         qDebug() << "[P2P] Instancja B (Klient) nasłuchuje na TCP 12346";
         connect(tcpServer, &QTcpServer::newConnection, this, &P2PChatTool::onNewConnection);
 
-        // Skoro jesteśmy drugą instancją, łączymy się z pierwszą
+        // Klient łączy się do Serwera
         tcpSocket = new QTcpSocket(this);
         connect(tcpSocket, &QTcpSocket::readyRead, this, &P2PChatTool::onReadyRead);
         tcpSocket->connectToHost(QHostAddress::LocalHost, 12345);
@@ -43,50 +45,15 @@ void P2PChatTool::start() {
     }
 }
 
-void P2PChatTool::onNewConnection() {
-    // Akceptujemy połączenie od drugiego użytkownika, o ile jeszcze go nie mamy
-    if (!tcpSocket) {
-        tcpSocket = tcpServer->nextPendingConnection();
-        connect(tcpSocket, &QTcpSocket::readyRead, this, &P2PChatTool::onReadyRead);
-        connect(tcpSocket, &QTcpSocket::disconnected, tcpSocket, &QTcpSocket::deleteLater);
-
-        qDebug() << "[P2P] Zestawiono fizyczne połączenie z rozmówcą!";
-        emit connectionEstablished();
-    }
-}
-
-void P2PChatTool::onReadyRead() {
-    // Odbieranie fizycznych bajtów i zamiana ich z powrotem na tekst
-    if (tcpSocket) {
-        QByteArray data = tcpSocket->readAll();
-        QString message = QString::fromUtf8(data);
-        qDebug() << "[P2P] Otrzymano z sieci:" << message;
-
-        // Wysyłamy sygnał z tekstem do interfejsu graficznego
-        emit messageReceived(message);
-    }
-}
-
-void P2PChatTool::sendMessage(const QString& message) {
-    // Wysyłamy dane tylko wtedy, gdy kanał TCP jest otwarty
-    if (tcpSocket && tcpSocket->state() == QAbstractSocket::ConnectedState) {
-        tcpSocket->write(message.toUtf8());
-        tcpSocket->flush(); // Wymuszenie natychmiastowego wysłania bufora
-        qDebug() << "[P2P] Wysłano w sieć:" << message;
-    } else {
-        qDebug() << "[P2P] Ostrzeżenie: Brak aktywnego połączenia TCP. Nie wysłano wiadomości.";
-    }
-}
-
 void P2PChatTool::stop() {
-    if (tcpSocket) {
-        tcpSocket->disconnectFromHost();
-        tcpSocket = nullptr;
-    }
-    if (tcpServer->isListening()) {
+    if (tcpServer && tcpServer->isListening()) {
         tcpServer->close();
     }
-    qDebug() << "[P2P] Gniazda sieciowe bezpiecznie zamknięte.";
+    if (tcpSocket) {
+        tcpSocket->disconnectFromHost();
+        tcpSocket->deleteLater();
+        tcpSocket = nullptr;
+    }
 }
 
 bool P2PChatTool::isServerInstance() const {
@@ -108,40 +75,125 @@ void P2PChatTool::sendDiscoverPing(const QString& myName) {
     qDebug() << "[Radar] Wysłano ping DISCOVER w sieć.";
 }
 
+void P2PChatTool::sendInvite(const QString& targetName, const QString& subject, const QJsonArray& timeSlots) {
+    if (!discoverySocket) return;
+
+    QJsonObject json;
+    json["type"] = "INVITE";
+    json["from"] = myIdentity;
+    json["to"] = targetName; // Wskazujemy do kogo ma trafić z powrotem
+    json["subject"] = subject;
+    json["slots"] = timeSlots;
+
+    QByteArray data = QJsonDocument(json).toJson(QJsonDocument::Compact);
+    // Wysyłamy prosto w pokój Multicast (zamiast używać parametru ip i port)
+    discoverySocket->writeDatagram(data, QHostAddress("239.255.43.21"), 45454);
+}
+
+void P2PChatTool::sendAccept(const QString& targetName, const QString& chosenTime) {
+    if (!discoverySocket) return;
+
+    QJsonObject json;
+    json["type"] = "ACCEPT";
+    json["from"] = targetName;
+    json["by"] = myIdentity;
+    json["time"] = chosenTime;
+
+    QByteArray data = QJsonDocument(json).toJson(QJsonDocument::Compact);
+    // Wysyłamy prosto w pokój Multicast
+    discoverySocket->writeDatagram(data, QHostAddress("239.255.43.21"), 45454);
+}
+
 void P2PChatTool::processDiscoveryDatagrams() {
     while (discoverySocket->hasPendingDatagrams()) {
         QNetworkDatagram datagram = discoverySocket->receiveDatagram();
-
         QJsonParseError error;
         QJsonDocument doc = QJsonDocument::fromJson(datagram.data(), &error);
 
         if (error.error == QJsonParseError::NoError && doc.isObject()) {
             QJsonObject json = doc.object();
             QString type = json["type"].toString();
-            QString name = json["name"].toString();
 
             if (type == "DISCOVER") {
-                // 1. ZABEZPIECZENIE: Ignorujemy własne zapytania (Echo)
+                QString name = json["name"].toString();
                 if (name == myIdentity) return;
-
-                qDebug() << "[Radar] Otrzymano zapytanie od:" << name;
 
                 QJsonObject responseJson;
                 responseJson["type"] = "PRESENCE";
-                responseJson["name"] = myIdentity; // 2. Odpowiadamy NASZĄ tożsamością
-
+                responseJson["name"] = myIdentity;
                 QByteArray responseData = QJsonDocument(responseJson).toJson(QJsonDocument::Compact);
-                if (!datagram.senderAddress().isNull() && datagram.senderPort() > 0) {
-                    discoverySocket->writeDatagram(responseData, QHostAddress("239.255.43.21"), 45454);
-                }
+                discoverySocket->writeDatagram(responseData, QHostAddress("239.255.43.21"), 45454);
             }
             else if (type == "PRESENCE") {
-                // Zabezpieczenie: Ignorujemy własne odpowiedzi
+                QString name = json["name"].toString();
                 if (name == myIdentity) return;
 
-                qDebug() << "[Radar] ZNALEZIONO UŻYTKOWNIKA:" << name;
                 emit userDiscovered(name, datagram.senderAddress(), datagram.senderPort());
             }
+            else if (type == "INVITE") {
+                QString to = json["to"].toString();
+                // TARCZA 1: Ignorujemy, jeśli to zaproszenie nie jest do nas!
+                if (to != myIdentity) return;
+
+                QString from = json["from"].toString();
+                QString subject = json["subject"].toString();
+                QJsonArray timeSlots = json["slots"].toArray();
+
+                emit inviteReceived(from, subject, timeSlots);
+            }
+            else if (type == "ACCEPT") {
+                QString from = json["from"].toString();
+                QString by = json["by"].toString();
+                if (by == myIdentity) return;
+
+                // TARCZA 2: Reagujemy tylko, jeśli akceptacja dotyczy naszego zaproszenia
+                if (from == myIdentity) {
+                    QString time = json["time"].toString();
+                    emit inviteAccepted(by, time);
+                }
+            }
+        }
+    }
+}
+
+// 1. Zestawienie połączenia przez instancję Serwera
+void P2PChatTool::onNewConnection() {
+    if (tcpServer->hasPendingConnections()) {
+        tcpSocket = tcpServer->nextPendingConnection();
+        connect(tcpSocket, &QTcpSocket::readyRead, this, &P2PChatTool::onReadyRead);
+        qDebug() << "[P2P TCP] Zestawiono połączenie czatu z rozmówcą!";
+    }
+}
+
+// 2. Wysyłanie wiadomości na zewnątrz
+void P2PChatTool::sendMessage(const QString& message) {
+    if (tcpSocket && tcpSocket->state() == QAbstractSocket::ConnectedState) {
+        QJsonObject json;
+        json["type"] = "CHAT";
+        json["payload"] = message;
+
+        QByteArray data = QJsonDocument(json).toJson(QJsonDocument::Compact);
+        tcpSocket->write(data);
+    } else {
+        qDebug() << "[P2P TCP] Gniazdo nie jest połączone. Nie można wysłać wiadomości.";
+    }
+}
+
+// 3. Odbieranie wiadomości z zewnątrz
+void P2PChatTool::onReadyRead() {
+    if (!tcpSocket) return;
+
+    QByteArray data = tcpSocket->readAll();
+
+    QJsonParseError error;
+    QJsonDocument doc = QJsonDocument::fromJson(data, &error);
+
+    if (error.error == QJsonParseError::NoError && doc.isObject()) {
+        QJsonObject json = doc.object();
+        if (json["type"].toString() == "CHAT") {
+            QString payload = json["payload"].toString();
+            // Wypuszczamy sygnał do interfejsu
+            emit messageReceived(payload);
         }
     }
 }

@@ -226,6 +226,30 @@ communicationtool.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\KorepetycjeApp.dir\build.make CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.s
 .PHONY : communicationtool.cpp.s
 
+databasemanager.obj: databasemanager.cpp.obj
+.PHONY : databasemanager.obj
+
+# target to build an object file
+databasemanager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\KorepetycjeApp.dir\build.make CMakeFiles/KorepetycjeApp.dir/databasemanager.cpp.obj
+.PHONY : databasemanager.cpp.obj
+
+databasemanager.i: databasemanager.cpp.i
+.PHONY : databasemanager.i
+
+# target to preprocess a source file
+databasemanager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\KorepetycjeApp.dir\build.make CMakeFiles/KorepetycjeApp.dir/databasemanager.cpp.i
+.PHONY : databasemanager.cpp.i
+
+databasemanager.s: databasemanager.cpp.s
+.PHONY : databasemanager.s
+
+# target to generate assembly for a file
+databasemanager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\KorepetycjeApp.dir\build.make CMakeFiles/KorepetycjeApp.dir/databasemanager.cpp.s
+.PHONY : databasemanager.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -294,6 +318,9 @@ help:
 	@echo ... communicationtool.obj
 	@echo ... communicationtool.i
 	@echo ... communicationtool.s
+	@echo ... databasemanager.obj
+	@echo ... databasemanager.i
+	@echo ... databasemanager.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

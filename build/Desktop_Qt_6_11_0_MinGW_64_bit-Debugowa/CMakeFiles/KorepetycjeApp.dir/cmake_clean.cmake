@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/KorepetycjeApp.dir/authmanager.cpp.obj.d"
   "CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.obj"
   "CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.obj.d"
+  "CMakeFiles/KorepetycjeApp.dir/databasemanager.cpp.obj"
+  "CMakeFiles/KorepetycjeApp.dir/databasemanager.cpp.obj.d"
   "CMakeFiles/KorepetycjeApp.dir/main.cpp.obj"
   "CMakeFiles/KorepetycjeApp.dir/main.cpp.obj.d"
   "CMakeFiles/KorepetycjeApp.dir/mainwindow.cpp.obj"

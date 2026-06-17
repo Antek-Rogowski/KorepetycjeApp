@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "authmanager.h"
 #include "communicationtool.h"
+#include "databasemanager.h"
 
 // Definiujemy strukturę GStreamera bez dołączania całego nagłówka C do C++ (forward declaration)
 struct _GstElement;
@@ -34,7 +35,8 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    AuthManager authManager;
+    //AuthManager authManager;
+    DatabaseManager dbManager;
     P2PChatTool chatTool;
 
     // Wskaźnik na nasz rurociąg wideo GStreamer
