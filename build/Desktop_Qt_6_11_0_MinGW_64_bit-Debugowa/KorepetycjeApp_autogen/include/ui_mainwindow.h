@@ -47,6 +47,8 @@ public:
     QVBoxLayout *verticalLayout;
     QLabel *userProfileLabel;
     QSpacerItem *verticalSpacer;
+    QPushButton *searchButton;
+    QListWidget *discoveredUsersList;
     QPushButton *logoutButton;
     QListWidget *listWidget;
     QWidget *page_3;
@@ -116,9 +118,19 @@ public:
 
         verticalLayout->addWidget(userProfileLabel);
 
-        verticalSpacer = new QSpacerItem(20, 448, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
+        verticalSpacer = new QSpacerItem(20, 224, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
 
         verticalLayout->addItem(verticalSpacer);
+
+        searchButton = new QPushButton(widget);
+        searchButton->setObjectName("searchButton");
+
+        verticalLayout->addWidget(searchButton);
+
+        discoveredUsersList = new QListWidget(widget);
+        discoveredUsersList->setObjectName("discoveredUsersList");
+
+        verticalLayout->addWidget(discoveredUsersList);
 
         logoutButton = new QPushButton(widget);
         logoutButton->setObjectName("logoutButton");
@@ -223,7 +235,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(2);
+        stackedWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -237,6 +249,7 @@ public:
         loginButton->setText(QCoreApplication::translate("MainWindow", "Zaloguj", nullptr));
         errorLabel->setText(QString());
         userProfileLabel->setText(QCoreApplication::translate("MainWindow", "Witaj, ", nullptr));
+        searchButton->setText(QCoreApplication::translate("MainWindow", "Szukaj", nullptr));
         logoutButton->setText(QCoreApplication::translate("MainWindow", "Wyloguj", nullptr));
         videoStreamLabel->setText(QCoreApplication::translate("MainWindow", "Oczekiwanie na po\305\202\304\205czenie wideo...", nullptr));
         muteButton->setText(QCoreApplication::translate("MainWindow", "Wycisz", nullptr));

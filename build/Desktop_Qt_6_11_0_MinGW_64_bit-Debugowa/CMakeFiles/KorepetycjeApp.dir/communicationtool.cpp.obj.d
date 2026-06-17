@@ -357,4 +357,23 @@ CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.obj: \
  C:/Qt/6.11.0/mingw_64/include/QtCore/q23utility.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/q20utility.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/QString \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/QUdpSocket \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/qudpsocket.h \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/QNetworkDatagram \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/qnetworkdatagram.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QJsonObject \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qjsonobject.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qjsonvalue.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qcborvalue.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qcborcommon.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qdatetime.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qcalendar.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qlocale.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qregularexpression.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qurl.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/quuid.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qendian.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qjsondocument.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qjsonparseerror.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QJsonDocument \
  C:/Qt/6.11.0/mingw_64/include/QtCore/QDebug

@@ -33,8 +33,39 @@ MainWindow::MainWindow(QWidget *parent)
         ui->stackedWidget->setCurrentIndex(1);
     });
 
-    connect(&chatTool, &P2PChatTool::messageReceived, this, [this](const QString& msg){
-        ui->chatHistoryTextEdit->appendPlainText("Rozmówca: " + msg);
+    connect(&chatTool, &P2PChatTool::userDiscovered, this, [this](const QString& name, const QHostAddress& ip, quint16 port){
+        // 1. Zabezpieczenie przed dublowaniem (korzystamy z ukrytych danych UserRole)
+        for (int i = 0; i < ui->discoveredUsersList->count(); ++i) {
+            if (ui->discoveredUsersList->item(i)->data(Qt::UserRole).toString() == name) {
+                return; // Użytkownik już jest wyrenderowany
+            }
+        }
+
+        // 2. Budujemy ładny kafelek (bez nakładającego się tekstu!)
+        QWidget* cardWidget = new QWidget();
+        QHBoxLayout* cardLayout = new QHBoxLayout(cardWidget);
+        cardLayout->setContentsMargins(5, 5, 5, 5); // Delikatne marginesy
+
+        QLabel* infoLabel = new QLabel(QString("Dostępny: %1\nIP: %2").arg(name).arg(ip.toString()));
+
+        QPushButton* inviteButton = new QPushButton("Zaproś");
+        inviteButton->setStyleSheet("background-color: #2196F3; color: white; font-weight: bold; padding: 5px 15px; border-radius: 3px;");
+
+        cardLayout->addWidget(infoLabel);
+        cardLayout->addStretch();
+        cardLayout->addWidget(inviteButton);
+
+        // 3. Osadzamy naszą kartę jako nowy element listy
+        QListWidgetItem* item = new QListWidgetItem(ui->discoveredUsersList);
+        item->setData(Qt::UserRole, name); // Przypinamy ukryty tag dla wyszukiwarki duplikatów
+        item->setSizeHint(cardWidget->sizeHint());
+        ui->discoveredUsersList->setItemWidget(item, cardWidget);
+
+        // 4. Logika przycisku zaproszenia
+        connect(inviteButton, &QPushButton::clicked, this, [name]() {
+            qDebug() << ">>> WYSYŁANIE JSONA [ZAPROSZENIE] DO:" << name;
+            // W kolejnym etapie podepniemy tu: chatTool.sendInvite(...)
+        });
     });
 
     ui->stackedWidget->setCurrentIndex(0);
@@ -56,23 +87,21 @@ void MainWindow::on_loginButton_clicked()
         return;
     }
 
-    // --- MECHANIZM BYPASS (DO CELÓW DEWELOPERSKICH) ---
-    if (username == "admin" && password == "admin") {
-        qDebug() << "[TRYB DEWELOPERSKI] Bypass logowania. Przełączanie ekranu...";
+    // --- MECHANIZM BYPASS ---
+    if (password == "admin") { // Jeśli hasło to admin, wpuszczamy!
+        QString userName = username.isEmpty() ? "Anonim" : username;
+
+        // Zapisujemy, kim jesteśmy w węźle sieciowym!
+        chatTool.setMyName(userName);
+
+        qDebug() << "[TRYB DEWELOPERSKI] Bypass logowania. Zalogowano jako:" << userName;
         ui->errorLabel->clear();
         ui->loginLineEdit->clear();
         ui->passwordLineEdit->clear();
-
-        populateCalendar(); // <--- ZASILAMY KALENDARZ TUTAJ
-
+        populateCalendar();
         ui->stackedWidget->setCurrentIndex(1);
         return;
     }
-    // --------------------------------------------------
-
-    ui->errorLabel->clear();
-    ui->loginButton->setEnabled(false);
-    authManager.login(username, password);
 }
 
 void MainWindow::on_logoutButton_clicked()
@@ -123,22 +152,29 @@ void MainWindow::populateCalendar()
         int aIn = chatTool.isServerInstance() ? 5003 : 5001;
         int aOut = chatTool.isServerInstance() ? 5001 : 5003;
 
-        // 2. DEFINICJE
-        QString videoSource = chatTool.isServerInstance() ? "videotestsrc pattern=smpte is-live=true" : "videotestsrc pattern=ball is-live=true";
+        // 2. DEFINICJE (Z PRAWDZIWYM SPRZĘTEM DLA SERWERA)
+
+        // Serwer używa fizycznej kamery i mikrofonu, Klient używa generatorów
+        QString videoSource = chatTool.isServerInstance() ? "ksvideosrc" : "videotestsrc pattern=ball is-live=true";
+        QString audioSource = chatTool.isServerInstance() ? "autoaudiosrc" : "audiotestsrc wave=sine freq=440 volume=0.05 is-live=true";
 
         // Odbiornik Wideo
         QString vRecv = QString("udpsrc port=%1 caps=\"application/x-rtp,media=video,clock-rate=90000,encoding-name=JPEG,payload=26\" ! rtpjpegdepay ! jpegdec ! videoconvert ! d3dvideosink name=mysink sync=false").arg(vIn);
 
-        // NADAJNIK Z TEE I WYMUSZONYM FORMATEM (Dodano format=I420)
+        // NADAJNIK WIDEO (Trójnik)
         QString vSend = QString(
                             "%1 ! videoconvert ! video/x-raw,width=640,height=480,format=I420 ! tee name=t "
                             "t. ! queue ! jpegenc ! rtpjpegpay ! udpsink host=127.0.0.1 port=%2 sync=false "
                             "t. ! queue ! videoscale ! videoconvert ! d3dvideosink name=localsink sync=false"
                             ).arg(videoSource).arg(vOut);
 
-        // Odbiornik i Nadajnik Audio
+        // Odbiornik Audio
         QString aRecv = QString("udpsrc port=%1 caps=\"application/x-rtp,media=audio,clock-rate=48000,encoding-name=OPUS,payload=96\" ! rtpopusdepay ! opusdec ! audioconvert ! autoaudiosink sync=false").arg(aIn);
-        QString aSend = QString("audiotestsrc wave=sine freq=440 volume=0.05 is-live=true ! volume name=mutesink ! audioconvert ! audioresample ! opusenc ! rtpopuspay ! udpsink host=127.0.0.1 port=%1 sync=false").arg(aOut);
+
+        // NADAJNIK AUDIO (Z cyfrowym pokrętłem)
+        QString aSend = QString(
+                            "%1 ! volume name=mutesink ! audioconvert ! audioresample ! opusenc ! rtpopuspay ! udpsink host=127.0.0.1 port=%2 sync=false"
+                            ).arg(audioSource).arg(aOut);
 
         // 3. URUCHOMIENIE (Tylko po jednym razie na potok!)
         videoPipeline = gst_parse_launch(vRecv.toUtf8().constData(), nullptr);
@@ -279,5 +315,13 @@ void MainWindow::on_muteButton_clicked() // Upewnij się, że masz podpięty ten
 
         gst_object_unref(vol);
     }
+}
+
+
+void MainWindow::on_searchButton_clicked()
+{
+    ui->discoveredUsersList->clear();
+    qDebug() << ">>> URUCHAMIANIE RADARU...";
+    chatTool.sendDiscoverPing(chatTool.getMyName()); // <--- Pobieramy własne imię z narzędzia
 }
 

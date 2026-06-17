@@ -2,6 +2,8 @@ C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/build/Desktop_Qt_6_11_0_MinGW_64_
   C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debugowa/KorepetycjeApp_autogen/moc_predefs.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/QFlags \
   C:/Qt/6.11.0/mingw_64/include/QtCore/QIODevice \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/QJsonDocument \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/QJsonObject \
   C:/Qt/6.11.0/mingw_64/include/QtCore/QList \
   C:/Qt/6.11.0/mingw_64/include/QtCore/QMetaType \
   C:/Qt/6.11.0/mingw_64/include/QtCore/QObject \
@@ -35,6 +37,8 @@ C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/build/Desktop_Qt_6_11_0_MinGW_64_
   C:/Qt/6.11.0/mingw_64/include/QtCore/qbytearraylist.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qbytearrayview.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qcalendar.h \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/qcborcommon.h \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/qcborvalue.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qchar.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qcheckedint_impl.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qcompare.h \
@@ -68,6 +72,10 @@ C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/build/Desktop_Qt_6_11_0_MinGW_64_
   C:/Qt/6.11.0/mingw_64/include/QtCore/qiodevicebase.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qiterable.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qiterator.h \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/qjsondocument.h \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/qjsonobject.h \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/qjsonparseerror.h \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/qjsonvalue.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qlatin1stringview.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qline.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qlist.h \
@@ -93,6 +101,7 @@ C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/build/Desktop_Qt_6_11_0_MinGW_64_
   C:/Qt/6.11.0/mingw_64/include/QtCore/qprocessordetection.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qrect.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qrefcount.h \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/qregularexpression.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qscopedpointer.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qscopeguard.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qset.h \
@@ -140,6 +149,7 @@ C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/build/Desktop_Qt_6_11_0_MinGW_64_
   C:/Qt/6.11.0/mingw_64/include/QtCore/qtypes.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qurl.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qutf8stringview.h \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/quuid.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qvariant.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qvarlengtharray.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qversiontagging.h \
@@ -172,16 +182,19 @@ C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/build/Desktop_Qt_6_11_0_MinGW_64_
   C:/Qt/6.11.0/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.11.0/mingw_64/include/QtNetwork/QNetworkAccessManager \
+  C:/Qt/6.11.0/mingw_64/include/QtNetwork/QNetworkDatagram \
   C:/Qt/6.11.0/mingw_64/include/QtNetwork/QNetworkReply \
   C:/Qt/6.11.0/mingw_64/include/QtNetwork/QNetworkRequest \
   C:/Qt/6.11.0/mingw_64/include/QtNetwork/QSslConfiguration \
   C:/Qt/6.11.0/mingw_64/include/QtNetwork/QSslPreSharedKeyAuthenticator \
   C:/Qt/6.11.0/mingw_64/include/QtNetwork/QTcpServer \
   C:/Qt/6.11.0/mingw_64/include/QtNetwork/QTcpSocket \
+  C:/Qt/6.11.0/mingw_64/include/QtNetwork/QUdpSocket \
   C:/Qt/6.11.0/mingw_64/include/QtNetwork/qabstractsocket.h \
   C:/Qt/6.11.0/mingw_64/include/QtNetwork/qhostaddress.h \
   C:/Qt/6.11.0/mingw_64/include/QtNetwork/qhttpheaders.h \
   C:/Qt/6.11.0/mingw_64/include/QtNetwork/qnetworkaccessmanager.h \
+  C:/Qt/6.11.0/mingw_64/include/QtNetwork/qnetworkdatagram.h \
   C:/Qt/6.11.0/mingw_64/include/QtNetwork/qnetworkreply.h \
   C:/Qt/6.11.0/mingw_64/include/QtNetwork/qnetworkrequest.h \
   C:/Qt/6.11.0/mingw_64/include/QtNetwork/qssl.h \
@@ -195,6 +208,7 @@ C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/build/Desktop_Qt_6_11_0_MinGW_64_
   C:/Qt/6.11.0/mingw_64/include/QtNetwork/qtnetwork-config.h \
   C:/Qt/6.11.0/mingw_64/include/QtNetwork/qtnetworkexports.h \
   C:/Qt/6.11.0/mingw_64/include/QtNetwork/qtnetworkglobal.h \
+  C:/Qt/6.11.0/mingw_64/include/QtNetwork/qudpsocket.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qmainwindow.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qsizepolicy.h \

@@ -432,6 +432,20 @@ CMakeFiles/KorepetycjeApp.dir/main.cpp.obj: \
  C:/Qt/6.11.0/mingw_64/include/QtNetwork/qtcpserver.h \
  C:/Qt/6.11.0/mingw_64/include/QtNetwork/QTcpSocket \
  C:/Qt/6.11.0/mingw_64/include/QtCore/QString \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/QUdpSocket \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/qudpsocket.h \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/QNetworkDatagram \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/qnetworkdatagram.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QJsonObject \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qjsonobject.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qjsonvalue.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qcborvalue.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qcborcommon.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qregularexpression.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/quuid.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qjsondocument.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qjsonparseerror.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QJsonDocument \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QApplication \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qapplication.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qcoreapplication.h \

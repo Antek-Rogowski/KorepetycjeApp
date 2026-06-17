@@ -43,8 +43,14 @@ template <> constexpr inline auto P2PChatTool::qt_create_metaobjectdata<qt_meta_
         "",
         "message",
         "connectionEstablished",
+        "userDiscovered",
+        "name",
+        "QHostAddress",
+        "ip",
+        "port",
         "onNewConnection",
-        "onReadyRead"
+        "onReadyRead",
+        "processDiscoveryDatagrams"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -54,10 +60,16 @@ template <> constexpr inline auto P2PChatTool::qt_create_metaobjectdata<qt_meta_
         }}),
         // Signal 'connectionEstablished'
         QtMocHelpers::SignalData<void()>(4, 2, QMC::AccessPublic, QMetaType::Void),
+        // Signal 'userDiscovered'
+        QtMocHelpers::SignalData<void(const QString &, const QHostAddress &, quint16)>(5, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 6 }, { 0x80000000 | 7, 8 }, { QMetaType::UShort, 9 },
+        }}),
         // Slot 'onNewConnection'
-        QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPrivate, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(10, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'onReadyRead'
-        QtMocHelpers::SlotData<void()>(6, 2, QMC::AccessPrivate, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(11, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'processDiscoveryDatagrams'
+        QtMocHelpers::SlotData<void()>(12, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -83,8 +95,10 @@ void P2PChatTool::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         switch (_id) {
         case 0: _t->messageReceived((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
         case 1: _t->connectionEstablished(); break;
-        case 2: _t->onNewConnection(); break;
-        case 3: _t->onReadyRead(); break;
+        case 2: _t->userDiscovered((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QHostAddress>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<quint16>>(_a[3]))); break;
+        case 3: _t->onNewConnection(); break;
+        case 4: _t->onReadyRead(); break;
+        case 5: _t->processDiscoveryDatagrams(); break;
         default: ;
         }
     }
@@ -92,6 +106,8 @@ void P2PChatTool::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         if (QtMocHelpers::indexOfMethod<void (P2PChatTool::*)(const QString & )>(_a, &P2PChatTool::messageReceived, 0))
             return;
         if (QtMocHelpers::indexOfMethod<void (P2PChatTool::*)()>(_a, &P2PChatTool::connectionEstablished, 1))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (P2PChatTool::*)(const QString & , const QHostAddress & , quint16 )>(_a, &P2PChatTool::userDiscovered, 2))
             return;
     }
 }
@@ -115,14 +131,14 @@ int P2PChatTool::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 6)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 6;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 6)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 4;
+        _id -= 6;
     }
     return _id;
 }
@@ -137,5 +153,11 @@ void P2PChatTool::messageReceived(const QString & _t1)
 void P2PChatTool::connectionEstablished()
 {
     QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
+}
+
+// SIGNAL 2
+void P2PChatTool::userDiscovered(const QString & _t1, const QHostAddress & _t2, quint16 _t3)
+{
+    QMetaObject::activate<void>(this, &staticMetaObject, 2, nullptr, _t1, _t2, _t3);
 }
 QT_WARNING_POP

@@ -1,5 +1,7 @@
 C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debugowa/KorepetycjeApp_autogen/EWIEGA46WW/moc_communicationtool.cpp: C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/communicationtool.h \
   C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debugowa/KorepetycjeApp_autogen/moc_predefs.h \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/QJsonDocument \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/QJsonObject \
   C:/Qt/6.11.0/mingw_64/include/QtCore/QObject \
   C:/Qt/6.11.0/mingw_64/include/QtCore/QString \
   C:/Qt/6.11.0/mingw_64/include/QtCore/q17memory.h \
@@ -26,6 +28,9 @@ C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/build/Desktop_Qt_6_11_0_MinGW_64_
   C:/Qt/6.11.0/mingw_64/include/QtCore/qbytearrayalgorithms.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qbytearraylist.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qbytearrayview.h \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/qcalendar.h \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/qcborcommon.h \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/qcborvalue.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qchar.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qcompare.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qcompare_impl.h \
@@ -39,7 +44,9 @@ C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/build/Desktop_Qt_6_11_0_MinGW_64_
   C:/Qt/6.11.0/mingw_64/include/QtCore/qcontiguouscache.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qdarwinhelpers.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qdatastream.h \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/qdatetime.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qdebug.h \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/qendian.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qexceptionhandling.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qflags.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qfloat16.h \
@@ -55,8 +62,13 @@ C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/build/Desktop_Qt_6_11_0_MinGW_64_
   C:/Qt/6.11.0/mingw_64/include/QtCore/qiodevicebase.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qiterable.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qiterator.h \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/qjsondocument.h \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/qjsonobject.h \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/qjsonparseerror.h \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/qjsonvalue.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qlatin1stringview.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qlist.h \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/qlocale.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qlogging.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qmalloc.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qmap.h \
@@ -74,6 +86,7 @@ C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/build/Desktop_Qt_6_11_0_MinGW_64_
   C:/Qt/6.11.0/mingw_64/include/QtCore/qpair.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qprocessordetection.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qrefcount.h \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/qregularexpression.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qscopedpointer.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qscopeguard.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qset.h \
@@ -118,21 +131,27 @@ C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/build/Desktop_Qt_6_11_0_MinGW_64_
   C:/Qt/6.11.0/mingw_64/include/QtCore/qtversionchecks.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qtypeinfo.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qtypes.h \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/qurl.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qutf8stringview.h \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/quuid.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qvariant.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qvarlengtharray.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qxptype_traits.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qyieldcpu.h \
+  C:/Qt/6.11.0/mingw_64/include/QtNetwork/QNetworkDatagram \
   C:/Qt/6.11.0/mingw_64/include/QtNetwork/QTcpServer \
   C:/Qt/6.11.0/mingw_64/include/QtNetwork/QTcpSocket \
+  C:/Qt/6.11.0/mingw_64/include/QtNetwork/QUdpSocket \
   C:/Qt/6.11.0/mingw_64/include/QtNetwork/qabstractsocket.h \
   C:/Qt/6.11.0/mingw_64/include/QtNetwork/qhostaddress.h \
+  C:/Qt/6.11.0/mingw_64/include/QtNetwork/qnetworkdatagram.h \
   C:/Qt/6.11.0/mingw_64/include/QtNetwork/qtcpserver.h \
   C:/Qt/6.11.0/mingw_64/include/QtNetwork/qtcpsocket.h \
   C:/Qt/6.11.0/mingw_64/include/QtNetwork/qtnetwork-config.h \
   C:/Qt/6.11.0/mingw_64/include/QtNetwork/qtnetworkexports.h \
   C:/Qt/6.11.0/mingw_64/include/QtNetwork/qtnetworkglobal.h \
+  C:/Qt/6.11.0/mingw_64/include/QtNetwork/qudpsocket.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/atomic \
