@@ -14,9 +14,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/communicationtool.cpp" "CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.obj" "gcc" "CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.obj.d"
   "C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/main.cpp" "CMakeFiles/KorepetycjeApp.dir/main.cpp.obj" "gcc" "CMakeFiles/KorepetycjeApp.dir/main.cpp.obj.d"
   "C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/mainwindow.cpp" "CMakeFiles/KorepetycjeApp.dir/mainwindow.cpp.obj" "gcc" "CMakeFiles/KorepetycjeApp.dir/mainwindow.cpp.obj.d"
-  "C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/time.cpp" "CMakeFiles/KorepetycjeApp.dir/time.cpp.obj" "gcc" "CMakeFiles/KorepetycjeApp.dir/time.cpp.obj.d"
-  "C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/user.cpp" "CMakeFiles/KorepetycjeApp.dir/user.cpp.obj" "gcc" "CMakeFiles/KorepetycjeApp.dir/user.cpp.obj.d"
-  "C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/useravailability.cpp" "CMakeFiles/KorepetycjeApp.dir/useravailability.cpp.obj" "gcc" "CMakeFiles/KorepetycjeApp.dir/useravailability.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

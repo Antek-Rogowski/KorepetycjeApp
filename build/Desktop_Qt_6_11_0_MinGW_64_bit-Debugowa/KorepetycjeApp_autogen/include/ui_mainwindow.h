@@ -52,6 +52,7 @@ public:
     QWidget *page_3;
     QHBoxLayout *horizontalLayout_2;
     QWidget *widget_3;
+    QVBoxLayout *verticalLayout_3;
     QLabel *videoStreamLabel;
     QWidget *widget_4;
     QHBoxLayout *horizontalLayout_3;
@@ -139,14 +140,17 @@ public:
         horizontalLayout_2->setObjectName("horizontalLayout_2");
         widget_3 = new QWidget(page_3);
         widget_3->setObjectName("widget_3");
+        verticalLayout_3 = new QVBoxLayout(widget_3);
+        verticalLayout_3->setObjectName("verticalLayout_3");
         videoStreamLabel = new QLabel(widget_3);
         videoStreamLabel->setObjectName("videoStreamLabel");
-        videoStreamLabel->setGeometry(QRect(170, 430, 211, 21));
         videoStreamLabel->setLayoutDirection(Qt::LayoutDirection::LeftToRight);
         videoStreamLabel->setStyleSheet(QString::fromUtf8("background-color: black; color: white;"));
+
+        verticalLayout_3->addWidget(videoStreamLabel);
+
         widget_4 = new QWidget(widget_3);
         widget_4->setObjectName("widget_4");
-        widget_4->setGeometry(QRect(0, 460, 561, 51));
         horizontalLayout_3 = new QHBoxLayout(widget_4);
         horizontalLayout_3->setObjectName("horizontalLayout_3");
         muteButton = new QPushButton(widget_4);
@@ -164,6 +168,9 @@ public:
         endCallButton->setStyleSheet(QString::fromUtf8("color: red;"));
 
         horizontalLayout_3->addWidget(endCallButton);
+
+
+        verticalLayout_3->addWidget(widget_4);
 
 
         horizontalLayout_2->addWidget(widget_3);

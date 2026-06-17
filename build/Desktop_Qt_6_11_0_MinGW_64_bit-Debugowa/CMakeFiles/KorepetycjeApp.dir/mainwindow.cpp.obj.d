@@ -1,17 +1,11 @@
 CMakeFiles/KorepetycjeApp.dir/mainwindow.cpp.obj: \
  C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\mainwindow.cpp \
- C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\mainwindow.h \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/qmainwindow.h \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
- C:/Qt/6.11.0/mingw_64/include/QtGui/qtguiglobal.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qglobal.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/pstl_config.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstddef \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gst.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/galloca.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gtypes.h \
+ C:/gstreamer/1.0/mingw_x86_64/lib/glib-2.0/include/glibconfig.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gmacros.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stddef.h \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/stddef.h \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/crtdefs.h \
@@ -21,6 +15,231 @@ CMakeFiles/KorepetycjeApp.dir/mainwindow.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/_mingw_secapi.h \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/limits.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/syslimits.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/limits.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/float.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/float.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gversionmacros.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/glib-visibility.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sys/timeb.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/_timeval.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/pthread_time.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/string.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/garray.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gasyncqueue.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gthread.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gatomic.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/glib-typeof.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/pstl_config.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gerror.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdarg.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/stdarg.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/_mingw_stdarg.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gquark.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gutils.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gbacktrace.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/signal.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/pthread_signal.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gbase64.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gbitlock.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gbookmarkfile.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gdatetime.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gtimezone.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gbytes.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gcharset.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gchecksum.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gconvert.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gdataset.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gdate.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gdir.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/genviron.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gfileutils.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/ggettext.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/ghash.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/glist.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gmem.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gnode.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/ghmac.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gchecksum.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/ghook.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/ghostutils.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/giochannel.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gmain.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gpoll.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gslist.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gstring.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gunicode.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gstrfuncs.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gkeyfile.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gmappedfile.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gmarkup.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gmessages.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gvariant.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gvarianttype.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/goption.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gpathbuf.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gpattern.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gprimes.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gqsort.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gqueue.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/grand.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/grcbox.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/grefcount.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/grefstring.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gmem.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gmacros.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gregex.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gscanner.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gsequence.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gshell.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gslice.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gspawn.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gstringchunk.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gstrvbuilder.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gtestutils.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/errno.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdlib \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/stdlib.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/malloc.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mm_malloc.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gthreadpool.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gtimer.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gtrashstack.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gtree.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/guri.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/guuid.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gversion.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/gwin32.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/deprecated/gallocator.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/deprecated/gcache.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/deprecated/gcompletion.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/deprecated/gmain.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/deprecated/grel.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/deprecated/gthread.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib/glib-autocleanups.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/glib-compat.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstcpuid.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstconfig.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstenumtypes.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/glib-object.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/gobject/gbinding.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/gobject/gobject.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/gobject/gtype.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/gobject/gobject-visibility.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/gobject/gvalue.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/gobject/gparam.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/gobject/gclosure.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/gobject/gsignal.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/gobject/gmarshal.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/gobject/gboxed.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/gobject/glib-types.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/gobject/gbindinggroup.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/gobject/genums.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/gobject/glib-enumtypes.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/gobject/gparamspecs.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/gobject/gsignalgroup.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/gobject/gsourceclosure.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/gobject/gtypemodule.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/gobject/gtypeplugin.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/gobject/gvaluearray.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/gobject/gvaluetypes.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0/gobject/gobject-autocleanups.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstversion.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstatomicqueue.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstbin.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstelement.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstobject.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstcontrolbinding.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstcontrolsource.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstclock.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstpad.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstbuffer.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstminiobject.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstallocator.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstmemory.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstcaps.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gststructure.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstdatetime.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstidstr.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstcapsfeatures.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstmeta.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstbytearrayinterface.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstbufferlist.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstpadtemplate.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstevent.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstformat.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstiterator.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gsttaglist.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstsample.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstsegment.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstmessage.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstquery.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gsttoc.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstcontext.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstdevice.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gststreams.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gststreamcollection.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gsttask.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gsttaskpool.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstbus.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstelementfactory.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstplugin.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstmacros.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstpluginfeature.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gsturi.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstminiobject.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstbufferpool.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstchildproxy.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstdebugutils.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstdevicemonitor.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstdeviceprovider.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstdeviceproviderfactory.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstdynamictypefactory.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstelementmetadata.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gsterror.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstghostpad.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstinfo.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstclock.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstmetafactory.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstparamspecs.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstvalue.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstpipeline.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstpoll.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstpreset.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstprotection.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstregistry.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstpromise.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstsystemclock.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gsttagsetter.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gsttocsetter.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gsttracer.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gsttracerfactory.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gsttracerrecord.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gsttypefind.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gsttypefindfactory.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstutils.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstparse.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstvecdeque.h \
+ C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0/gst/gstcompat.h \
+ C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\mainwindow.h \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qmainwindow.h \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qtguiglobal.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qglobal.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstddef \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/utility \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_relops.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
@@ -31,18 +250,6 @@ CMakeFiles/KorepetycjeApp.dir/mainwindow.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/stdint.h \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/assert.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdlib \
- C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/stdlib.h \
- C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/limits.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/syslimits.h \
- C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/limits.h \
- C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
- C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/malloc.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mm_malloc.h \
- C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/errno.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdbool.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qtcoreglobal.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qtversionchecks.h \
@@ -217,13 +424,6 @@ CMakeFiles/KorepetycjeApp.dir/mainwindow.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sys/types.h \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/process.h \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/corecrt_startup.h \
- C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/signal.h \
- C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/pthread_signal.h \
- C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
- C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sys/timeb.h \
- C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
- C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/_timeval.h \
- C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/pthread_time.h \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/pthread_compat.h \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/pthread_unistd.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
@@ -240,8 +440,6 @@ CMakeFiles/KorepetycjeApp.dir/mainwindow.cpp.obj: \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qrefcount.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qarraydata.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qpair.h \
- C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/string.h \
- C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sec_api/string_s.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qarraydatapointer.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qarraydataops.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qcontainertools_impl.h \
@@ -283,9 +481,6 @@ CMakeFiles/KorepetycjeApp.dir/mainwindow.cpp.obj: \
  C:/Qt/6.11.0/mingw_64/include/QtCore/q20memory.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/q17memory.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qbytearrayalgorithms.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdarg.h \
- C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/stdarg.h \
- C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/_mingw_stdarg.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qbytearrayview.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qstringfwd.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qstringalgorithms.h \
@@ -518,4 +713,5 @@ CMakeFiles/KorepetycjeApp.dir/mainwindow.cpp.obj: \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QListWidgetItem \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QHBoxLayout \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/QPushButton
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/QPushButton \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/QVBoxLayout

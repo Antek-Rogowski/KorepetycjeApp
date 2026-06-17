@@ -1,3 +1,4 @@
+#include <gst/gst.h>
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QDebug>
@@ -5,6 +6,8 @@
 #include <QHBoxLayout>
 #include <QLabel>
 #include <QPushButton>
+#include <QVBoxLayout>
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -32,6 +35,9 @@ MainWindow::MainWindow(QWidget *parent)
     connect(&chatTool, &P2PChatTool::messageReceived, this, [this](const QString& msg){
         ui->chatHistoryTextEdit->appendPlainText("Rozmówca: " + msg);
     });
+
+    ui->stackedWidget->setCurrentIndex(0);
+    initVideo();
 }
 
 MainWindow::~MainWindow()
@@ -109,8 +115,21 @@ void MainWindow::populateCalendar()
     // 6. Logika kliknięcia w przycisk - w Etapie 3 przeniesie nas to do pokoju spotkań
     connect(joinButton, &QPushButton::clicked, this, [this]() {
         qDebug() << ">>> INICJALIZACJA SPOTKANIA: Połączenie z Janem Kowalskim...";
+        chatTool.start();
 
-        chatTool.start(); // Otwieramy gniazda komunikacyjne
+        // Budujemy i uruchamiamy rurociąg GStreamer
+        // ksvideosrc pobiera obraz bezpośrednio z Drivera Windows, omijając ograniczenia Qt
+        GError *error = nullptr;
+        videoPipeline = gst_parse_launch("ksvideosrc ! videoconvert ! autovideosink", &error);
+
+        if (error) {
+            qDebug() << "[GStreamer BŁĄD]:" << error->message;
+            g_error_free(error);
+        } else if (videoPipeline) {
+            qDebug() << "[GStreamer] Rurociąg zbudowany pomyślnie. Uruchamianie strumienia...";
+            // Zmiana stanu rurociągu na PLAYING (odpalenie kamery i okna)
+            gst_element_set_state(videoPipeline, GST_STATE_PLAYING);
+        }
 
         ui->stackedWidget->setCurrentIndex(2);
     });
@@ -141,12 +160,47 @@ void MainWindow::on_sendMessageButton_clicked()
 void MainWindow::on_endCallButton_clicked()
 {
     qDebug() << "Zakończono spotkanie. Powrót do kalendarza.";
+    chatTool.stop();
 
-    chatTool.stop(); // Zamykamy bezpiecznie gniazda komunikacyjne
+    // Bezpieczne zatrzymanie i zwolnienie zasobów rurociągu wideo
+    if (videoPipeline) {
+        qDebug() << "[GStreamer] Zatrzymywanie rurociągu...";
+        gst_element_set_state(videoPipeline, GST_STATE_NULL);
+        gst_object_unref(videoPipeline);
+        videoPipeline = nullptr;
+    }
 
-    // Czyścimy historię na ekranie, by nie została do następnego spotkania
     ui->chatHistoryTextEdit->clear();
-
     ui->stackedWidget->setCurrentIndex(1);
+}
+
+void MainWindow::initVideo()
+{
+    qDebug() << "[GStreamer] Inicjalizacja bibliotek...";
+    // Inicjalizacja silnika GStreamer
+    gst_init(nullptr, nullptr);
+
+    // Ukrywamy naszą etykietę tekstową w pokoju spotkań, bo obraz pojawi się w oknie dedykowanym
+    ui->videoStreamLabel->setText("Strumień wideo zarządzany przez GStreamer");
+}
+
+
+void MainWindow::on_cameraButton_clicked()
+{
+    if (!videoPipeline) return;
+
+    // Przełączanie stanów: PAUSED (zamrożenie kamery) / PLAYING (wznowienie)
+    GstState currentState, pendingState;
+    gst_element_get_state(videoPipeline, &currentState, &pendingState, 0);
+
+    if (currentState == GST_STATE_PLAYING) {
+        gst_element_set_state(videoPipeline, GST_STATE_PAUSED);
+        ui->cameraButton->setText("Włącz kamerę");
+        qDebug() << "[GStreamer] Strumień wstrzymany (PAUSED)";
+    } else {
+        gst_element_set_state(videoPipeline, GST_STATE_PLAYING);
+        ui->cameraButton->setText("Wyłącz kamerę");
+        qDebug() << "[GStreamer] Strumień wznowiony (PLAYING)";
+    }
 }
 

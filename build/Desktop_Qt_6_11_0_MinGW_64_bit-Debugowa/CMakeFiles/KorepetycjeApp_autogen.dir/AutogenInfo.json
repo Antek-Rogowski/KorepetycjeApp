@@ -360,8 +360,7 @@
 		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake",
 		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicWindowsHelpers.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
-		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/Qt6Dependencies.cmake",
-		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/GNUInstallDirs.cmake"
+		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/Qt6Dependencies.cmake"
 	],
 	"CMAKE_SOURCE_DIR" : "C:/Users/anton/OneDrive/Desktop/KorepetycjeApp",
 	"CROSS_CONFIG" : false,
@@ -386,24 +385,6 @@
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
 			null
-		],
-		[
-			"C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/time.h",
-			"MU",
-			"EWIEGA46WW/moc_time.cpp",
-			null
-		],
-		[
-			"C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/user.h",
-			"MU",
-			"EWIEGA46WW/moc_user.cpp",
-			null
-		],
-		[
-			"C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/useravailability.h",
-			"MU",
-			"EWIEGA46WW/moc_useravailability.cpp",
-			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -414,7 +395,6 @@
 		"MINGW_HAS_SECURE_API=1",
 		"QT_CORE_LIB",
 		"QT_GUI_LIB",
-		"QT_NEEDS_QMAIN",
 		"QT_NETWORK_LIB",
 		"QT_QML_DEBUG",
 		"QT_WIDGETS_LIB",
@@ -434,10 +414,13 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"C:/Qt/6.11.0/mingw_64/include/QtCore",
-		"C:/Qt/6.11.0/mingw_64/include",
-		"C:/Qt/6.11.0/mingw_64/mkspecs/win32-g++",
+		"C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0",
+		"C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0",
+		"C:/gstreamer/1.0/mingw_x86_64/lib/glib-2.0/include",
 		"C:/Qt/6.11.0/mingw_64/include/QtWidgets",
+		"C:/Qt/6.11.0/mingw_64/include",
+		"C:/Qt/6.11.0/mingw_64/include/QtCore",
+		"C:/Qt/6.11.0/mingw_64/mkspecs/win32-g++",
 		"C:/Qt/6.11.0/mingw_64/include/QtGui",
 		"C:/Qt/6.11.0/mingw_64/include/QtNetwork",
 		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++",
@@ -456,7 +439,7 @@
 		"Q_GADGET_EXPORT",
 		"Q_ENUM_NS"
 	],
-	"MOC_OPTIONS" : [ "-DWIN32" ],
+	"MOC_OPTIONS" : [],
 	"MOC_PATH_PREFIX" : false,
 	"MOC_PREDEFS_CMD" : 
 	[
@@ -493,13 +476,6 @@
 		[ "C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/main.cpp", "MU", null ],
 		[
 			"C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/mainwindow.cpp",
-			"MU",
-			null
-		],
-		[ "C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/time.cpp", "MU", null ],
-		[ "C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/user.cpp", "MU", null ],
-		[
-			"C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/useravailability.cpp",
 			"MU",
 			null
 		]

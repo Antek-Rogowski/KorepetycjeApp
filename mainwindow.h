@@ -3,7 +3,11 @@
 
 #include <QMainWindow>
 #include "authmanager.h"
-#include "communicationtool.h" // Załączamy interfejsy narzędzi komunikacyjnych
+#include "communicationtool.h"
+
+// Definiujemy strukturę GStreamera bez dołączania całego nagłówka C do C++ (forward declaration)
+struct _GstElement;
+typedef _GstElement GstElement;
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -21,15 +25,18 @@ private slots:
     void on_loginButton_clicked();
     void on_logoutButton_clicked();
     void on_endCallButton_clicked();
-    // Tutaj zaraz wygenerujesz slot dla przycisku wysyłania
-
     void on_sendMessageButton_clicked();
+    void on_cameraButton_clicked();
 
 private:
     Ui::MainWindow *ui;
     AuthManager authManager;
-    P2PChatTool chatTool; // Instancja naszego narzędzia do czatu
+    P2PChatTool chatTool;
+
+    // Wskaźnik na nasz rurociąg wideo GStreamer
+    GstElement *videoPipeline = nullptr;
 
     void populateCalendar();
+    void initVideo();
 };
 #endif // MAINWINDOW_H

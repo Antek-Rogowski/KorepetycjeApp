@@ -84,51 +84,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-.PHONY : list_install_components/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	C:\Qt\Tools\CMake_64\bin\cmake.exe -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	C:\Qt\Tools\CMake_64\bin\cmake.exe -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	C:\Qt\Tools\CMake_64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	C:\Qt\Tools\CMake_64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	C:\Qt\Tools\CMake_64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	C:\Qt\Tools\CMake_64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debugowa\CMakeFiles C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debugowa\\CMakeFiles\progress.marks
@@ -319,78 +274,6 @@ mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\KorepetycjeApp.dir\build.make CMakeFiles/KorepetycjeApp.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
-time.obj: time.cpp.obj
-.PHONY : time.obj
-
-# target to build an object file
-time.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\KorepetycjeApp.dir\build.make CMakeFiles/KorepetycjeApp.dir/time.cpp.obj
-.PHONY : time.cpp.obj
-
-time.i: time.cpp.i
-.PHONY : time.i
-
-# target to preprocess a source file
-time.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\KorepetycjeApp.dir\build.make CMakeFiles/KorepetycjeApp.dir/time.cpp.i
-.PHONY : time.cpp.i
-
-time.s: time.cpp.s
-.PHONY : time.s
-
-# target to generate assembly for a file
-time.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\KorepetycjeApp.dir\build.make CMakeFiles/KorepetycjeApp.dir/time.cpp.s
-.PHONY : time.cpp.s
-
-user.obj: user.cpp.obj
-.PHONY : user.obj
-
-# target to build an object file
-user.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\KorepetycjeApp.dir\build.make CMakeFiles/KorepetycjeApp.dir/user.cpp.obj
-.PHONY : user.cpp.obj
-
-user.i: user.cpp.i
-.PHONY : user.i
-
-# target to preprocess a source file
-user.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\KorepetycjeApp.dir\build.make CMakeFiles/KorepetycjeApp.dir/user.cpp.i
-.PHONY : user.cpp.i
-
-user.s: user.cpp.s
-.PHONY : user.s
-
-# target to generate assembly for a file
-user.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\KorepetycjeApp.dir\build.make CMakeFiles/KorepetycjeApp.dir/user.cpp.s
-.PHONY : user.cpp.s
-
-useravailability.obj: useravailability.cpp.obj
-.PHONY : useravailability.obj
-
-# target to build an object file
-useravailability.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\KorepetycjeApp.dir\build.make CMakeFiles/KorepetycjeApp.dir/useravailability.cpp.obj
-.PHONY : useravailability.cpp.obj
-
-useravailability.i: useravailability.cpp.i
-.PHONY : useravailability.i
-
-# target to preprocess a source file
-useravailability.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\KorepetycjeApp.dir\build.make CMakeFiles/KorepetycjeApp.dir/useravailability.cpp.i
-.PHONY : useravailability.cpp.i
-
-useravailability.s: useravailability.cpp.s
-.PHONY : useravailability.s
-
-# target to generate assembly for a file
-useravailability.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\KorepetycjeApp.dir\build.make CMakeFiles/KorepetycjeApp.dir/useravailability.cpp.s
-.PHONY : useravailability.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -398,10 +281,6 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
-	@echo ... install
-	@echo ... install/local
-	@echo ... install/strip
-	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... KorepetycjeApp_autogen
 	@echo ... KorepetycjeApp_autogen_timestamp_deps
@@ -421,15 +300,6 @@ help:
 	@echo ... mainwindow.obj
 	@echo ... mainwindow.i
 	@echo ... mainwindow.s
-	@echo ... time.obj
-	@echo ... time.i
-	@echo ... time.s
-	@echo ... user.obj
-	@echo ... user.i
-	@echo ... user.s
-	@echo ... useravailability.obj
-	@echo ... useravailability.i
-	@echo ... useravailability.s
 .PHONY : help
 
 

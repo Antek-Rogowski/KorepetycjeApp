@@ -120,71 +120,11 @@ CMakeFiles/KorepetycjeApp.dir/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/KorepetycjeApp.dir/mainwindow.cpp.s"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\mainwindow.cpp -o CMakeFiles\KorepetycjeApp.dir\mainwindow.cpp.s
 
-CMakeFiles/KorepetycjeApp.dir/time.cpp.obj: CMakeFiles/KorepetycjeApp.dir/flags.make
-CMakeFiles/KorepetycjeApp.dir/time.cpp.obj: CMakeFiles/KorepetycjeApp.dir/includes_CXX.rsp
-CMakeFiles/KorepetycjeApp.dir/time.cpp.obj: C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/time.cpp
-CMakeFiles/KorepetycjeApp.dir/time.cpp.obj: CMakeFiles/KorepetycjeApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debugowa\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/KorepetycjeApp.dir/time.cpp.obj"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/KorepetycjeApp.dir/time.cpp.obj -MF CMakeFiles\KorepetycjeApp.dir\time.cpp.obj.d -o CMakeFiles\KorepetycjeApp.dir\time.cpp.obj -c C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\time.cpp
-
-CMakeFiles/KorepetycjeApp.dir/time.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/KorepetycjeApp.dir/time.cpp.i"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\time.cpp > CMakeFiles\KorepetycjeApp.dir\time.cpp.i
-
-CMakeFiles/KorepetycjeApp.dir/time.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/KorepetycjeApp.dir/time.cpp.s"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\time.cpp -o CMakeFiles\KorepetycjeApp.dir\time.cpp.s
-
-CMakeFiles/KorepetycjeApp.dir/useravailability.cpp.obj: CMakeFiles/KorepetycjeApp.dir/flags.make
-CMakeFiles/KorepetycjeApp.dir/useravailability.cpp.obj: CMakeFiles/KorepetycjeApp.dir/includes_CXX.rsp
-CMakeFiles/KorepetycjeApp.dir/useravailability.cpp.obj: C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/useravailability.cpp
-CMakeFiles/KorepetycjeApp.dir/useravailability.cpp.obj: CMakeFiles/KorepetycjeApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debugowa\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/KorepetycjeApp.dir/useravailability.cpp.obj"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/KorepetycjeApp.dir/useravailability.cpp.obj -MF CMakeFiles\KorepetycjeApp.dir\useravailability.cpp.obj.d -o CMakeFiles\KorepetycjeApp.dir\useravailability.cpp.obj -c C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\useravailability.cpp
-
-CMakeFiles/KorepetycjeApp.dir/useravailability.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/KorepetycjeApp.dir/useravailability.cpp.i"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\useravailability.cpp > CMakeFiles\KorepetycjeApp.dir\useravailability.cpp.i
-
-CMakeFiles/KorepetycjeApp.dir/useravailability.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/KorepetycjeApp.dir/useravailability.cpp.s"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\useravailability.cpp -o CMakeFiles\KorepetycjeApp.dir\useravailability.cpp.s
-
-CMakeFiles/KorepetycjeApp.dir/user.cpp.obj: CMakeFiles/KorepetycjeApp.dir/flags.make
-CMakeFiles/KorepetycjeApp.dir/user.cpp.obj: CMakeFiles/KorepetycjeApp.dir/includes_CXX.rsp
-CMakeFiles/KorepetycjeApp.dir/user.cpp.obj: C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/user.cpp
-CMakeFiles/KorepetycjeApp.dir/user.cpp.obj: CMakeFiles/KorepetycjeApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debugowa\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/KorepetycjeApp.dir/user.cpp.obj"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/KorepetycjeApp.dir/user.cpp.obj -MF CMakeFiles\KorepetycjeApp.dir\user.cpp.obj.d -o CMakeFiles\KorepetycjeApp.dir\user.cpp.obj -c C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\user.cpp
-
-CMakeFiles/KorepetycjeApp.dir/user.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/KorepetycjeApp.dir/user.cpp.i"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\user.cpp > CMakeFiles\KorepetycjeApp.dir\user.cpp.i
-
-CMakeFiles/KorepetycjeApp.dir/user.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/KorepetycjeApp.dir/user.cpp.s"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\user.cpp -o CMakeFiles\KorepetycjeApp.dir\user.cpp.s
-
-CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.obj: CMakeFiles/KorepetycjeApp.dir/flags.make
-CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.obj: CMakeFiles/KorepetycjeApp.dir/includes_CXX.rsp
-CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.obj: C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/communicationtool.cpp
-CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.obj: CMakeFiles/KorepetycjeApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debugowa\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.obj"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.obj -MF CMakeFiles\KorepetycjeApp.dir\communicationtool.cpp.obj.d -o CMakeFiles\KorepetycjeApp.dir\communicationtool.cpp.obj -c C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\communicationtool.cpp
-
-CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.i"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\communicationtool.cpp > CMakeFiles\KorepetycjeApp.dir\communicationtool.cpp.i
-
-CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.s"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\communicationtool.cpp -o CMakeFiles\KorepetycjeApp.dir\communicationtool.cpp.s
-
 CMakeFiles/KorepetycjeApp.dir/authmanager.cpp.obj: CMakeFiles/KorepetycjeApp.dir/flags.make
 CMakeFiles/KorepetycjeApp.dir/authmanager.cpp.obj: CMakeFiles/KorepetycjeApp.dir/includes_CXX.rsp
 CMakeFiles/KorepetycjeApp.dir/authmanager.cpp.obj: C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/authmanager.cpp
 CMakeFiles/KorepetycjeApp.dir/authmanager.cpp.obj: CMakeFiles/KorepetycjeApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debugowa\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/KorepetycjeApp.dir/authmanager.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debugowa\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/KorepetycjeApp.dir/authmanager.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/KorepetycjeApp.dir/authmanager.cpp.obj -MF CMakeFiles\KorepetycjeApp.dir\authmanager.cpp.obj.d -o CMakeFiles\KorepetycjeApp.dir\authmanager.cpp.obj -c C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\authmanager.cpp
 
 CMakeFiles/KorepetycjeApp.dir/authmanager.cpp.i: cmake_force
@@ -195,16 +135,28 @@ CMakeFiles/KorepetycjeApp.dir/authmanager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/KorepetycjeApp.dir/authmanager.cpp.s"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\authmanager.cpp -o CMakeFiles\KorepetycjeApp.dir\authmanager.cpp.s
 
+CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.obj: CMakeFiles/KorepetycjeApp.dir/flags.make
+CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.obj: CMakeFiles/KorepetycjeApp.dir/includes_CXX.rsp
+CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.obj: C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/communicationtool.cpp
+CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.obj: CMakeFiles/KorepetycjeApp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debugowa\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.obj -MF CMakeFiles\KorepetycjeApp.dir\communicationtool.cpp.obj.d -o CMakeFiles\KorepetycjeApp.dir\communicationtool.cpp.obj -c C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\communicationtool.cpp
+
+CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\communicationtool.cpp > CMakeFiles\KorepetycjeApp.dir\communicationtool.cpp.i
+
+CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\communicationtool.cpp -o CMakeFiles\KorepetycjeApp.dir\communicationtool.cpp.s
+
 # Object files for target KorepetycjeApp
 KorepetycjeApp_OBJECTS = \
 "CMakeFiles/KorepetycjeApp.dir/KorepetycjeApp_autogen/mocs_compilation.cpp.obj" \
 "CMakeFiles/KorepetycjeApp.dir/main.cpp.obj" \
 "CMakeFiles/KorepetycjeApp.dir/mainwindow.cpp.obj" \
-"CMakeFiles/KorepetycjeApp.dir/time.cpp.obj" \
-"CMakeFiles/KorepetycjeApp.dir/useravailability.cpp.obj" \
-"CMakeFiles/KorepetycjeApp.dir/user.cpp.obj" \
-"CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.obj" \
-"CMakeFiles/KorepetycjeApp.dir/authmanager.cpp.obj"
+"CMakeFiles/KorepetycjeApp.dir/authmanager.cpp.obj" \
+"CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.obj"
 
 # External object files for target KorepetycjeApp
 KorepetycjeApp_EXTERNAL_OBJECTS =
@@ -212,21 +164,17 @@ KorepetycjeApp_EXTERNAL_OBJECTS =
 KorepetycjeApp.exe: CMakeFiles/KorepetycjeApp.dir/KorepetycjeApp_autogen/mocs_compilation.cpp.obj
 KorepetycjeApp.exe: CMakeFiles/KorepetycjeApp.dir/main.cpp.obj
 KorepetycjeApp.exe: CMakeFiles/KorepetycjeApp.dir/mainwindow.cpp.obj
-KorepetycjeApp.exe: CMakeFiles/KorepetycjeApp.dir/time.cpp.obj
-KorepetycjeApp.exe: CMakeFiles/KorepetycjeApp.dir/useravailability.cpp.obj
-KorepetycjeApp.exe: CMakeFiles/KorepetycjeApp.dir/user.cpp.obj
-KorepetycjeApp.exe: CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.obj
 KorepetycjeApp.exe: CMakeFiles/KorepetycjeApp.dir/authmanager.cpp.obj
+KorepetycjeApp.exe: CMakeFiles/KorepetycjeApp.dir/communicationtool.cpp.obj
 KorepetycjeApp.exe: CMakeFiles/KorepetycjeApp.dir/build.make
 KorepetycjeApp.exe: C:/Qt/6.11.0/mingw_64/lib/libQt6Widgets.a
 KorepetycjeApp.exe: C:/Qt/6.11.0/mingw_64/lib/libQt6Network.a
 KorepetycjeApp.exe: C:/Qt/6.11.0/mingw_64/lib/libQt6Gui.a
 KorepetycjeApp.exe: C:/Qt/6.11.0/mingw_64/lib/libQt6Core.a
-KorepetycjeApp.exe: C:/Qt/6.11.0/mingw_64/lib/libQt6EntryPoint.a
 KorepetycjeApp.exe: CMakeFiles/KorepetycjeApp.dir/linkLibs.rsp
 KorepetycjeApp.exe: CMakeFiles/KorepetycjeApp.dir/objects1.rsp
 KorepetycjeApp.exe: CMakeFiles/KorepetycjeApp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debugowa\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable KorepetycjeApp.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debugowa\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable KorepetycjeApp.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\KorepetycjeApp.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

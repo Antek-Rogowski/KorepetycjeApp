@@ -157,61 +157,51 @@
        <layout class="QHBoxLayout" name="horizontalLayout_2">
         <item>
          <widget class="QWidget" name="widget_3" native="true">
-          <widget class="QLabel" name="videoStreamLabel">
-           <property name="geometry">
-            <rect>
-             <x>170</x>
-             <y>430</y>
-             <width>211</width>
-             <height>21</height>
-            </rect>
-           </property>
-           <property name="layoutDirection">
-            <enum>Qt::LayoutDirection::LeftToRight</enum>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">background-color: black; color: white;</string>
-           </property>
-           <property name="text">
-            <string>Oczekiwanie na połączenie wideo...</string>
-           </property>
-          </widget>
-          <widget class="QWidget" name="widget_4" native="true">
-           <property name="geometry">
-            <rect>
-             <x>0</x>
-             <y>460</y>
-             <width>561</width>
-             <height>51</height>
-            </rect>
-           </property>
-           <layout class="QHBoxLayout" name="horizontalLayout_3">
-            <item>
-             <widget class="QPushButton" name="muteButton">
-              <property name="text">
-               <string>Wycisz</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QPushButton" name="cameraButton">
-              <property name="text">
-               <string>Wyłącz kamerę</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QPushButton" name="endCallButton">
-              <property name="styleSheet">
-               <string notr="true">color: red;</string>
-              </property>
-              <property name="text">
-               <string>Zakończ połączenie</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QLabel" name="videoStreamLabel">
+             <property name="layoutDirection">
+              <enum>Qt::LayoutDirection::LeftToRight</enum>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: black; color: white;</string>
+             </property>
+             <property name="text">
+              <string>Oczekiwanie na połączenie wideo...</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget_4" native="true">
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <item>
+               <widget class="QPushButton" name="muteButton">
+                <property name="text">
+                 <string>Wycisz</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="cameraButton">
+                <property name="text">
+                 <string>Wyłącz kamerę</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="endCallButton">
+                <property name="styleSheet">
+                 <string notr="true">color: red;</string>
+                </property>
+                <property name="text">
+                 <string>Zakończ połączenie</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
          </widget>
         </item>
         <item>
