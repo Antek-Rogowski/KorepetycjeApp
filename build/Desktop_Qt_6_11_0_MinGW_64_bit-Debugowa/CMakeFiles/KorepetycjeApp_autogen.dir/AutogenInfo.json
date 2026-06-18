@@ -280,6 +280,41 @@
 		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets-relwithdebinfo.cmake",
 		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake",
 		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake",
+		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6NetworkConfigVersion.cmake",
+		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6NetworkConfigVersionImpl.cmake",
+		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6NetworkConfig.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
+		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6NetworkDependencies.cmake",
+		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6NetworkTargetsPrecheck.cmake",
+		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6NetworkTargets.cmake",
+		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6NetworkTargets-relwithdebinfo.cmake",
+		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6NetworkAdditionalTargetInfo.cmake",
+		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6NetworkPlugins.cmake",
+		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6QNLMNIPluginConfig.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
+		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6QNLMNIPluginTargetsPrecheck.cmake",
+		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6QNLMNIPluginTargets.cmake",
+		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6QNLMNIPluginTargets-relwithdebinfo.cmake",
+		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6QNLMNIPluginAdditionalTargetInfo.cmake",
+		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6QSchannelBackendPluginConfig.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
+		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6QSchannelBackendPluginTargetsPrecheck.cmake",
+		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6QSchannelBackendPluginTargets.cmake",
+		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6QSchannelBackendPluginTargets-relwithdebinfo.cmake",
+		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6QSchannelBackendPluginAdditionalTargetInfo.cmake",
+		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginConfig.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
+		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargetsPrecheck.cmake",
+		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargets.cmake",
+		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargets-relwithdebinfo.cmake",
+		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginAdditionalTargetInfo.cmake",
+		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginConfig.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
+		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargetsPrecheck.cmake",
+		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets.cmake",
+		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets-relwithdebinfo.cmake",
+		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginAdditionalTargetInfo.cmake",
+		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6NetworkVersionlessAliasTargets.cmake",
 		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
 		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
 		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/Qt6Config.cmake",
@@ -325,8 +360,7 @@
 		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake",
 		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicWindowsHelpers.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
-		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/Qt6Dependencies.cmake",
-		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/GNUInstallDirs.cmake"
+		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/Qt6Dependencies.cmake"
 	],
 	"CMAKE_SOURCE_DIR" : "C:/Users/anton/OneDrive/Desktop/KorepetycjeApp",
 	"CROSS_CONFIG" : false,
@@ -335,33 +369,27 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/AuthManager.h",
+			"MU",
+			"EWIEGA46WW/moc_AuthManager.cpp",
+			null
+		],
+		[
 			"C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/communicationtool.h",
 			"MU",
 			"EWIEGA46WW/moc_communicationtool.cpp",
 			null
 		],
 		[
+			"C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/databasemanager.h",
+			"MU",
+			"EWIEGA46WW/moc_databasemanager.cpp",
+			null
+		],
+		[
 			"C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
-			null
-		],
-		[
-			"C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/time.h",
-			"MU",
-			"EWIEGA46WW/moc_time.cpp",
-			null
-		],
-		[
-			"C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/user.h",
-			"MU",
-			"EWIEGA46WW/moc_user.cpp",
-			null
-		],
-		[
-			"C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/useravailability.h",
-			"MU",
-			"EWIEGA46WW/moc_useravailability.cpp",
 			null
 		]
 	],
@@ -373,7 +401,7 @@
 		"MINGW_HAS_SECURE_API=1",
 		"QT_CORE_LIB",
 		"QT_GUI_LIB",
-		"QT_NEEDS_QMAIN",
+		"QT_NETWORK_LIB",
 		"QT_QML_DEBUG",
 		"QT_WIDGETS_LIB",
 		"UNICODE",
@@ -392,11 +420,15 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"C:/Qt/6.11.0/mingw_64/include/QtCore",
-		"C:/Qt/6.11.0/mingw_64/include",
-		"C:/Qt/6.11.0/mingw_64/mkspecs/win32-g++",
+		"C:/gstreamer/1.0/mingw_x86_64/include/gstreamer-1.0",
+		"C:/gstreamer/1.0/mingw_x86_64/include/glib-2.0",
+		"C:/gstreamer/1.0/mingw_x86_64/lib/glib-2.0/include",
 		"C:/Qt/6.11.0/mingw_64/include/QtWidgets",
+		"C:/Qt/6.11.0/mingw_64/include",
+		"C:/Qt/6.11.0/mingw_64/include/QtCore",
+		"C:/Qt/6.11.0/mingw_64/mkspecs/win32-g++",
 		"C:/Qt/6.11.0/mingw_64/include/QtGui",
+		"C:/Qt/6.11.0/mingw_64/include/QtNetwork",
 		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++",
 		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32",
 		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward",
@@ -413,7 +445,7 @@
 		"Q_GADGET_EXPORT",
 		"Q_ENUM_NS"
 	],
-	"MOC_OPTIONS" : [ "-DWIN32" ],
+	"MOC_OPTIONS" : [],
 	"MOC_PATH_PREFIX" : false,
 	"MOC_PREDEFS_CMD" : 
 	[
@@ -438,20 +470,23 @@
 	"SOURCES" : 
 	[
 		[
+			"C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/authmanager.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/communicationtool.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/databasemanager.cpp",
 			"MU",
 			null
 		],
 		[ "C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/main.cpp", "MU", null ],
 		[
 			"C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/mainwindow.cpp",
-			"MU",
-			null
-		],
-		[ "C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/time.cpp", "MU", null ],
-		[ "C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/user.cpp", "MU", null ],
-		[
-			"C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/useravailability.cpp",
 			"MU",
 			null
 		]

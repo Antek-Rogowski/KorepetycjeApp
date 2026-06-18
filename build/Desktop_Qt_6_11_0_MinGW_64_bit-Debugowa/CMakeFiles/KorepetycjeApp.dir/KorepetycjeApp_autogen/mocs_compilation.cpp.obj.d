@@ -1,11 +1,11 @@
 CMakeFiles/KorepetycjeApp.dir/KorepetycjeApp_autogen/mocs_compilation.cpp.obj: \
  C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debugowa\KorepetycjeApp_autogen\mocs_compilation.cpp \
- C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debugowa\KorepetycjeApp_autogen\EWIEGA46WW/moc_mainwindow.cpp \
- C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/mainwindow.h \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/qmainwindow.h \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
- C:/Qt/6.11.0/mingw_64/include/QtGui/qtguiglobal.h \
+ C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debugowa\KorepetycjeApp_autogen\EWIEGA46WW/moc_AuthManager.cpp \
+ C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/AuthManager.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QObject \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qobject.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qobjectdefs.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qnamespace.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qglobal.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -153,14 +153,6 @@ CMakeFiles/KorepetycjeApp.dir/KorepetycjeApp_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qtresource.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qttranslation.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qversiontagging.h \
- C:/Qt/6.11.0/mingw_64/include/QtGui/qtgui-config.h \
- C:/Qt/6.11.0/mingw_64/include/QtGui/qtguiexports.h \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/qwidget.h \
- C:/Qt/6.11.0/mingw_64/include/QtGui/qwindowdefs.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qobjectdefs.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qnamespace.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qcompare.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qstdlibdetection.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qcomparehelpers.h \
@@ -232,8 +224,6 @@ CMakeFiles/KorepetycjeApp.dir/KorepetycjeApp_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/shared_ptr_atomic.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/auto_ptr.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_memory_defs.h \
- C:/Qt/6.11.0/mingw_64/include/QtGui/qwindowdefs_win.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qobject.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qstring.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qchar.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qstringview.h \
@@ -333,37 +323,23 @@ CMakeFiles/KorepetycjeApp.dir/KorepetycjeApp_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/chrono.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ratio \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qmargins.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qcheckedint_impl.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/q23utility.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/q20utility.h \
- C:/Qt/6.11.0/mingw_64/include/QtGui/qaction.h \
- C:/Qt/6.11.0/mingw_64/include/QtGui/qkeysequence.h \
- C:/Qt/6.11.0/mingw_64/include/QtGui/qicon.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qsize.h \
- C:/Qt/6.11.0/mingw_64/include/QtGui/qpixmap.h \
- C:/Qt/6.11.0/mingw_64/include/QtGui/qpaintdevice.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qrect.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qpoint.h \
- C:/Qt/6.11.0/mingw_64/include/QtGui/qcolor.h \
- C:/Qt/6.11.0/mingw_64/include/QtGui/qrgb.h \
- C:/Qt/6.11.0/mingw_64/include/QtGui/qrgba64.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qshareddata.h \
- C:/Qt/6.11.0/mingw_64/include/QtGui/qimage.h \
- C:/Qt/6.11.0/mingw_64/include/QtGui/qpixelformat.h \
- C:/Qt/6.11.0/mingw_64/include/QtGui/qtransform.h \
- C:/Qt/6.11.0/mingw_64/include/QtGui/qpolygon.h \
- C:/Qt/6.11.0/mingw_64/include/QtGui/qregion.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qspan.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cassert \
- C:/Qt/6.11.0/mingw_64/include/QtCore/q20iterator.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qline.h \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/QNetworkAccessManager \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/qnetworkaccessmanager.h \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/qtnetworkglobal.h \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/qtnetwork-config.h \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/qtnetworkexports.h \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/qnetworkrequest.h \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/qhttpheaders.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qdatetime.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qcalendar.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qlocale.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qvariant.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qdebug.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qtextstream.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qcontiguouscache.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/climits \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qsharedpointer.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qshareddata.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qsharedpointer_impl.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/set \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_set.h \
@@ -376,10 +352,137 @@ CMakeFiles/KorepetycjeApp.dir/KorepetycjeApp_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qhash.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qvarlengtharray.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qalloc.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/q23utility.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/q20utility.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qmetaobject.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QSharedDataPointer \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QString \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QUrl \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qurl.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QVariant \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/q26numeric.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QList \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QObject \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/QSslConfiguration \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/qsslconfiguration.h \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/qsslsocket.h \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/qtcpsocket.h \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/qabstractsocket.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qiodevice.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qspan.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cassert \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/q20iterator.h \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/qhostaddress.h \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/qsslerror.h \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/qsslcertificate.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qcryptographichash.h \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/qssl.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QFlags \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QMetaType \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/QNetworkReply \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/qnetworkreply.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QIODevice \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/QNetworkRequest \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/QNetworkAccessManager \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/QSslError \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qtmochelpers.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qtmocconstants.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/q20algorithm.h \
+ C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debugowa\KorepetycjeApp_autogen\EWIEGA46WW/moc_communicationtool.cpp \
+ C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/communicationtool.h \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/QTcpServer \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/qtcpserver.h \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/QTcpSocket \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QString \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/QUdpSocket \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/qudpsocket.h \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/QNetworkDatagram \
+ C:/Qt/6.11.0/mingw_64/include/QtNetwork/qnetworkdatagram.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QJsonObject \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qjsonobject.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qjsonvalue.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qcborvalue.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qcborcommon.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qregularexpression.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/quuid.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qendian.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qjsondocument.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qjsonparseerror.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QJsonDocument \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QJsonArray \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qjsonarray.h \
+ C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debugowa\KorepetycjeApp_autogen\EWIEGA46WW/moc_databasemanager.cpp \
+ C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/databasemanager.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QFile \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qfile.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qfiledevice.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/filesystem \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_fwd.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_path.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/locale \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwctype \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.tcc \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.tcc \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_conv.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/quoted_string.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.tcc \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/codecvt \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_dir.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_ops.h \
+ C:\Users\anton\OneDrive\Desktop\KorepetycjeApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debugowa\KorepetycjeApp_autogen\EWIEGA46WW/moc_mainwindow.cpp \
+ C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/mainwindow.h \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qmainwindow.h \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qtguiglobal.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qtgui-config.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qtguiexports.h \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qwidget.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qwindowdefs.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qwindowdefs_win.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qmargins.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qcheckedint_impl.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qaction.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qkeysequence.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qicon.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qsize.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qpixmap.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qpaintdevice.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qrect.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qpoint.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qcolor.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qrgb.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qrgba64.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qimage.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qpixelformat.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qtransform.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qpolygon.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qregion.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qline.h \
  C:/Qt/6.11.0/mingw_64/include/QtGui/qpalette.h \
  C:/Qt/6.11.0/mingw_64/include/QtGui/qbrush.h \
  C:/Qt/6.11.0/mingw_64/include/QtGui/qfont.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qendian.h \
  C:/Qt/6.11.0/mingw_64/include/QtGui/qfontmetrics.h \
  C:/Qt/6.11.0/mingw_64/include/QtGui/qfontinfo.h \
  C:/Qt/6.11.0/mingw_64/include/QtGui/qfontvariableaxis.h \
@@ -387,6 +490,6 @@ CMakeFiles/KorepetycjeApp.dir/KorepetycjeApp_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/6.11.0/mingw_64/include/QtGui/qcursor.h \
  C:/Qt/6.11.0/mingw_64/include/QtGui/qbitmap.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtabwidget.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qtmochelpers.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qtmocconstants.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/q20algorithm.h
+ C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/authmanager.h \
+ C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/communicationtool.h \
+ C:/Users/anton/OneDrive/Desktop/KorepetycjeApp/databasemanager.h

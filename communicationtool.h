@@ -1,50 +1,54 @@
 #ifndef COMMUNICATIONTOOL_H
 #define COMMUNICATIONTOOL_H
 
+#include <QObject>
+#include <QTcpServer>
+#include <QTcpSocket>
 #include <QString>
-#include <QDebug>
 
-// Interfejs narzędzia komunikacyjnego (czysta abstrakcja)
-class ICommunicationTool {
+#include <QUdpSocket>
+#include <QNetworkDatagram>
+#include <QJsonObject>
+#include <QJsonDocument>
+#include <QJsonArray>
+
+class P2PChatTool : public QObject {
+    Q_OBJECT // Wymagane dla mechanizmu sygnałów i slotów
 public:
-    virtual ~ICommunicationTool() = default;
+    explicit P2PChatTool(QObject* parent = nullptr);
+    ~P2PChatTool();
 
-    // Czysto wirtualne metody, które narzucają kontrakt dla klas pochodnych
-    virtual void start() = 0;
-    virtual void stop() = 0;
-    virtual bool isConnected() const = 0;
-    virtual QString getToolName() const = 0;
-};
-
-// Implementacja: Czat tekstowy P2P
-class P2PChatTool : public ICommunicationTool {
-private:
-    bool connectedStatus;
-
-public:
-    P2PChatTool();
-
-    void start() override;
-    void stop() override;
-    bool isConnected() const override;
-    QString getToolName() const override;
-
-    // Metoda specyficzna tylko dla czatu
+    void start();
+    void stop();
+    bool isServerInstance() const; // Zwraca true, jeśli zajęliśmy port główny (jesteśmy Serwerem)
     void sendMessage(const QString& message);
-};
+    void sendDiscoverPing(const QString& myName);
 
-// Implementacja: Strumieniowanie Wideo/Audio
-class VideoStreamTool : public ICommunicationTool {
+    void setMyName(const QString& name) { myIdentity = name; }
+    QString getMyName() const { return myIdentity; }
+
+    void sendInvite(const QString& targetName, const QString& subject, const QJsonArray& slots);
+    void sendAccept(const QString& targetName, const QString& chosenTime);
+
+    // Sygnały, które wyślemy do GUI (MainWindow), gdy coś przyjdzie z sieci
+signals:
+    void messageReceived(const QString& message);
+    void connectionEstablished();
+    void userDiscovered(const QString& name, const QHostAddress& ip, quint16 port);
+
+    void inviteReceived(const QString& from, const QString& subject, const QJsonArray& timeSlots);
+    void inviteAccepted(const QString& from, const QString& chosenTime);
+
+private slots:
+    void onNewConnection();
+    void onReadyRead();
+    void processDiscoveryDatagrams();
+
 private:
-    bool streamingStatus;
-
-public:
-    VideoStreamTool();
-
-    void start() override;
-    void stop() override;
-    bool isConnected() const override;
-    QString getToolName() const override;
+    QTcpServer* tcpServer;
+    QTcpSocket* tcpSocket;
+    QUdpSocket *discoverySocket = nullptr;
+    QString myIdentity = "Nieznajomy";
 };
 
 #endif // COMMUNICATIONTOOL_H

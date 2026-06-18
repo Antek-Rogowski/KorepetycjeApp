@@ -1,0 +1,36 @@
+{
+    "users": {
+        "Antoni": {
+            "availability": [
+                "Poniedziałek 16:00",
+                "Poniedziałek 17:00",
+                "Poniedziałek 18:00",
+                "Wtorek 18:00"
+            ],
+            "meetings": [
+            ],
+            "password": "admin",
+            "role": "tutor"
+        },
+        "Kama": {
+            "availability": [
+                "Poniedziałek 18:00",
+                "Poniedziałek 19:00",
+                "Środa 16:00"
+            ],
+            "meetings": [
+            ],
+            "password": "admin",
+            "role": "student"
+        },
+        "Marek": {
+            "availability": [
+                "Piątek 20:00"
+            ],
+            "meetings": [
+            ],
+            "password": "1234",
+            "role": "student"
+        }
+    }
+}
