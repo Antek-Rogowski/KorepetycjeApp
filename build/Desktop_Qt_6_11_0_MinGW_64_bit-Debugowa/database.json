@@ -8,11 +8,6 @@
                 "Wtorek 18:00"
             ],
             "meetings": [
-                {
-                    "subject": "Korepetycje C++ (GStreamer)",
-                    "time": "Poniedziałek 18:00",
-                    "with": "Kama"
-                }
             ],
             "password": "admin",
             "role": "tutor"
@@ -24,13 +19,17 @@
                 "Środa 16:00"
             ],
             "meetings": [
-                {
-                    "subject": "Korepetycje C++ (GStreamer)",
-                    "time": "Poniedziałek 18:00",
-                    "with": "Antoni"
-                }
             ],
             "password": "admin",
+            "role": "student"
+        },
+        "Marek": {
+            "availability": [
+                "Piątek 20:00"
+            ],
+            "meetings": [
+            ],
+            "password": "1234",
             "role": "student"
         }
     }

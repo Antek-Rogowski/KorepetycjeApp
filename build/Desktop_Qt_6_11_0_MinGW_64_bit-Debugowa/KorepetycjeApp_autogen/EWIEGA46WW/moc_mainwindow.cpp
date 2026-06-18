@@ -47,7 +47,10 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         "on_sendMessageButton_clicked",
         "on_cameraButton_clicked",
         "on_muteButton_clicked",
-        "on_searchButton_clicked"
+        "on_searchButton_clicked",
+        "on_Zarejestruj_clicked",
+        "on_removeTimeButton_clicked",
+        "on_addTimeButton_clicked"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -65,6 +68,12 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         QtMocHelpers::SlotData<void()>(7, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'on_searchButton_clicked'
         QtMocHelpers::SlotData<void()>(8, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_Zarejestruj_clicked'
+        QtMocHelpers::SlotData<void()>(9, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_removeTimeButton_clicked'
+        QtMocHelpers::SlotData<void()>(10, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_addTimeButton_clicked'
+        QtMocHelpers::SlotData<void()>(11, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -95,6 +104,9 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 4: _t->on_cameraButton_clicked(); break;
         case 5: _t->on_muteButton_clicked(); break;
         case 6: _t->on_searchButton_clicked(); break;
+        case 7: _t->on_Zarejestruj_clicked(); break;
+        case 8: _t->on_removeTimeButton_clicked(); break;
+        case 9: _t->on_addTimeButton_clicked(); break;
         default: ;
         }
     }
@@ -120,14 +132,14 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 7)
+        if (_id < 10)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 7;
+        _id -= 10;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 7)
+        if (_id < 10)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 7;
+        _id -= 10;
     }
     return _id;
 }

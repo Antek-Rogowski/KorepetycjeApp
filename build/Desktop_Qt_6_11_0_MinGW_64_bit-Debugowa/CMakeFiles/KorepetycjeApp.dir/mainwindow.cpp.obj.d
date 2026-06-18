@@ -795,7 +795,6 @@ CMakeFiles/KorepetycjeApp.dir/mainwindow.cpp.obj: \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QPushButton \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qpushbutton.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractbutton.h \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/QSpacerItem \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QStackedWidget \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qstackedwidget.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QStatusBar \

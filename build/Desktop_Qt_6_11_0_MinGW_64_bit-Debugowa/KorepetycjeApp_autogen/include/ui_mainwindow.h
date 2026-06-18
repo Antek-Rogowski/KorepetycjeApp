@@ -20,7 +20,6 @@
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPlainTextEdit>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QStackedWidget>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QVBoxLayout>
@@ -41,15 +40,23 @@ public:
     QLineEdit *passwordLineEdit;
     QPushButton *loginButton;
     QLabel *errorLabel;
+    QPushButton *Zarejestruj;
+    QLabel *label_3;
+    QLabel *label_4;
     QWidget *page_2;
     QHBoxLayout *horizontalLayout;
     QWidget *widget;
     QVBoxLayout *verticalLayout;
     QLabel *userProfileLabel;
-    QSpacerItem *verticalSpacer;
+    QPushButton *logoutButton;
+    QWidget *widget_5;
+    QHBoxLayout *horizontalLayout_4;
+    QPushButton *addTimeButton;
+    QPushButton *removeTimeButton;
+    QLineEdit *newTimeLineEdit;
+    QListWidget *availabilityListWidget;
     QPushButton *searchButton;
     QListWidget *discoveredUsersList;
-    QPushButton *logoutButton;
     QListWidget *listWidget;
     QWidget *page_3;
     QHBoxLayout *horizontalLayout_2;
@@ -101,8 +108,17 @@ public:
         loginButton->setGeometry(QRect(530, 320, 80, 24));
         errorLabel = new QLabel(page);
         errorLabel->setObjectName("errorLabel");
-        errorLabel->setGeometry(QRect(480, 350, 161, 20));
+        errorLabel->setGeometry(QRect(410, 350, 301, 71));
         errorLabel->setStyleSheet(QString::fromUtf8("color: red;"));
+        Zarejestruj = new QPushButton(page);
+        Zarejestruj->setObjectName("Zarejestruj");
+        Zarejestruj->setGeometry(QRect(30, 430, 101, 24));
+        label_3 = new QLabel(page);
+        label_3->setObjectName("label_3");
+        label_3->setGeometry(QRect(30, 370, 91, 31));
+        label_4 = new QLabel(page);
+        label_4->setObjectName("label_4");
+        label_4->setGeometry(QRect(30, 400, 141, 16));
         stackedWidget->addWidget(page);
         page_2 = new QWidget();
         page_2->setObjectName("page_2");
@@ -110,7 +126,7 @@ public:
         horizontalLayout->setObjectName("horizontalLayout");
         widget = new QWidget(page_2);
         widget->setObjectName("widget");
-        widget->setMaximumSize(QSize(1677215, 16777215));
+        widget->setMaximumSize(QSize(350, 16777215));
         verticalLayout = new QVBoxLayout(widget);
         verticalLayout->setObjectName("verticalLayout");
         userProfileLabel = new QLabel(widget);
@@ -118,9 +134,38 @@ public:
 
         verticalLayout->addWidget(userProfileLabel);
 
-        verticalSpacer = new QSpacerItem(20, 224, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
+        logoutButton = new QPushButton(widget);
+        logoutButton->setObjectName("logoutButton");
 
-        verticalLayout->addItem(verticalSpacer);
+        verticalLayout->addWidget(logoutButton);
+
+        widget_5 = new QWidget(widget);
+        widget_5->setObjectName("widget_5");
+        horizontalLayout_4 = new QHBoxLayout(widget_5);
+        horizontalLayout_4->setObjectName("horizontalLayout_4");
+        addTimeButton = new QPushButton(widget_5);
+        addTimeButton->setObjectName("addTimeButton");
+
+        horizontalLayout_4->addWidget(addTimeButton);
+
+        removeTimeButton = new QPushButton(widget_5);
+        removeTimeButton->setObjectName("removeTimeButton");
+        removeTimeButton->setMaximumSize(QSize(10000, 16777215));
+
+        horizontalLayout_4->addWidget(removeTimeButton);
+
+
+        verticalLayout->addWidget(widget_5);
+
+        newTimeLineEdit = new QLineEdit(widget);
+        newTimeLineEdit->setObjectName("newTimeLineEdit");
+
+        verticalLayout->addWidget(newTimeLineEdit);
+
+        availabilityListWidget = new QListWidget(widget);
+        availabilityListWidget->setObjectName("availabilityListWidget");
+
+        verticalLayout->addWidget(availabilityListWidget);
 
         searchButton = new QPushButton(widget);
         searchButton->setObjectName("searchButton");
@@ -129,13 +174,9 @@ public:
 
         discoveredUsersList = new QListWidget(widget);
         discoveredUsersList->setObjectName("discoveredUsersList");
+        discoveredUsersList->setMaximumSize(QSize(16777215, 150));
 
         verticalLayout->addWidget(discoveredUsersList);
-
-        logoutButton = new QPushButton(widget);
-        logoutButton->setObjectName("logoutButton");
-
-        verticalLayout->addWidget(logoutButton);
 
 
         horizontalLayout->addWidget(widget);
@@ -235,7 +276,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(1);
+        stackedWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -248,9 +289,15 @@ public:
         label_2->setText(QCoreApplication::translate("MainWindow", "Has\305\202o:", nullptr));
         loginButton->setText(QCoreApplication::translate("MainWindow", "Zaloguj", nullptr));
         errorLabel->setText(QString());
+        Zarejestruj->setText(QCoreApplication::translate("MainWindow", "Zarejestruj si\304\231", nullptr));
+        label_3->setText(QCoreApplication::translate("MainWindow", "Nie masz konta?", nullptr));
+        label_4->setText(QCoreApplication::translate("MainWindow", "Za\305\202o\305\274 je \305\202atwo tutaj:", nullptr));
         userProfileLabel->setText(QCoreApplication::translate("MainWindow", "Witaj, ", nullptr));
-        searchButton->setText(QCoreApplication::translate("MainWindow", "Szukaj", nullptr));
         logoutButton->setText(QCoreApplication::translate("MainWindow", "Wyloguj", nullptr));
+        addTimeButton->setText(QCoreApplication::translate("MainWindow", "Dodaj termin", nullptr));
+        removeTimeButton->setText(QCoreApplication::translate("MainWindow", "Usu\305\204 termin", nullptr));
+        newTimeLineEdit->setText(QCoreApplication::translate("MainWindow", "Wprowad\305\272 termin", nullptr));
+        searchButton->setText(QCoreApplication::translate("MainWindow", "Szukaj", nullptr));
         videoStreamLabel->setText(QCoreApplication::translate("MainWindow", "Oczekiwanie na po\305\202\304\205czenie wideo...", nullptr));
         muteButton->setText(QCoreApplication::translate("MainWindow", "Wycisz", nullptr));
         cameraButton->setText(QCoreApplication::translate("MainWindow", "Wy\305\202\304\205cz kamer\304\231", nullptr));

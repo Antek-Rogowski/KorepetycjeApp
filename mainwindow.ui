@@ -18,7 +18,7 @@
     <item row="0" column="0">
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="page">
        <widget class="QLabel" name="label">
@@ -86,10 +86,10 @@
        <widget class="QLabel" name="errorLabel">
         <property name="geometry">
          <rect>
-          <x>480</x>
+          <x>410</x>
           <y>350</y>
-          <width>161</width>
-          <height>20</height>
+          <width>301</width>
+          <height>71</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -99,6 +99,45 @@
          <string/>
         </property>
        </widget>
+       <widget class="QPushButton" name="Zarejestruj">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>430</y>
+          <width>101</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Zarejestruj się</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>370</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Nie masz konta?</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>400</y>
+          <width>141</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Założ je łatwo tutaj:</string>
+        </property>
+       </widget>
       </widget>
       <widget class="QWidget" name="page_2">
        <layout class="QHBoxLayout" name="horizontalLayout">
@@ -106,7 +145,7 @@
          <widget class="QWidget" name="widget" native="true">
           <property name="maximumSize">
            <size>
-            <width>1677215</width>
+            <width>350</width>
             <height>16777215</height>
            </size>
           </property>
@@ -119,17 +158,47 @@
             </widget>
            </item>
            <item>
-            <spacer name="verticalSpacer">
-             <property name="orientation">
-              <enum>Qt::Orientation::Vertical</enum>
+            <widget class="QPushButton" name="logoutButton">
+             <property name="text">
+              <string>Wyloguj</string>
              </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>20</width>
-               <height>224</height>
-              </size>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget_5" native="true">
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <item>
+               <widget class="QPushButton" name="addTimeButton">
+                <property name="text">
+                 <string>Dodaj termin</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="removeTimeButton">
+                <property name="maximumSize">
+                 <size>
+                  <width>10000</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Usuń termin</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="newTimeLineEdit">
+             <property name="text">
+              <string>Wprowadź termin</string>
              </property>
-            </spacer>
+            </widget>
+           </item>
+           <item>
+            <widget class="QListWidget" name="availabilityListWidget"/>
            </item>
            <item>
             <widget class="QPushButton" name="searchButton">
@@ -139,12 +208,12 @@
             </widget>
            </item>
            <item>
-            <widget class="QListWidget" name="discoveredUsersList"/>
-           </item>
-           <item>
-            <widget class="QPushButton" name="logoutButton">
-             <property name="text">
-              <string>Wyloguj</string>
+            <widget class="QListWidget" name="discoveredUsersList">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>150</height>
+              </size>
              </property>
             </widget>
            </item>

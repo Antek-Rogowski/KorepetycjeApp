@@ -16,9 +16,7 @@
 #include <QJsonObject>
 #include <QJsonArray>
 
-MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
+MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
 
@@ -146,6 +144,18 @@ MainWindow::MainWindow(QWidget *parent)
             newMeeting["time"] = chosenTime;
             myMeetings.append(newMeeting);
             myData["meetings"] = myMeetings;
+
+            // --- NOWOŚĆ: USUNIĘCIE ZAREZERWOWANEGO TERMINU Z DOSTĘPNOŚCI ---
+            QJsonArray oldSlots = myData["availability"].toArray();
+            QJsonArray newSlots;
+            for (const QJsonValue& val : oldSlots) {
+                if (val.toString() != chosenTime) { // Przepisujemy wszystko OPRÓCZ wybranej godziny
+                    newSlots.append(val);
+                }
+            }
+            myData["availability"] = newSlots;
+            // ---------------------------------------------------------------
+
             dbManager.updateUserData(chatTool.getMyName(), myData);
 
             // Odsyłamy używając Imienia zamiast IP/Port
@@ -169,6 +179,18 @@ MainWindow::MainWindow(QWidget *parent)
         newMeeting["time"] = chosenTime;
         myMeetings.append(newMeeting);
         myData["meetings"] = myMeetings;
+
+        // --- NOWOŚĆ: USUNIĘCIE ZAREZERWOWANEGO TERMINU Z DOSTĘPNOŚCI ---
+        QJsonArray oldSlots = myData["availability"].toArray();
+        QJsonArray newSlots;
+        for (const QJsonValue& val : oldSlots) {
+            if (val.toString() != chosenTime) {
+                newSlots.append(val);
+            }
+        }
+        myData["availability"] = newSlots;
+        // ---------------------------------------------------------------
+
         dbManager.updateUserData(chatTool.getMyName(), myData);
 
         QMessageBox::information(this, "Zaproszenie zaakceptowane",
@@ -225,9 +247,15 @@ void MainWindow::on_logoutButton_clicked()
 
 void MainWindow::populateCalendar()
 {
-    ui->listWidget->clear();
-
+    ui->availabilityListWidget->clear();
     QJsonObject myData = dbManager.getUserData(chatTool.getMyName());
+    QJsonArray currentSlots = myData["availability"].toArray();
+    for (const QJsonValue& val : currentSlots) {
+        ui->availabilityListWidget->addItem(val.toString());
+    }
+    // -------------------------------------------
+
+    ui->listWidget->clear();
     QJsonArray myMeetings = myData["meetings"].toArray();
 
     // Rysujemy kafelki na podstawie danych z pliku JSON
@@ -392,3 +420,71 @@ void MainWindow::on_searchButton_clicked()
     qDebug() << ">>> URUCHAMIANIE RADARU...";
     chatTool.sendDiscoverPing(chatTool.getMyName());
 }
+void MainWindow::on_Zarejestruj_clicked()
+{
+    qDebug() << "[UI] Kliknięto przycisk rejestracji!"; // <--- To musi pojawić się w konsoli!
+
+    QString username = ui->loginLineEdit->text();
+    QString password = ui->passwordLineEdit->text();
+
+    if (username.isEmpty() || password.isEmpty()) {
+        qDebug() << "[Rejestracja] Przerwano: Puste pola.";
+        ui->errorLabel->setStyleSheet("color: red; font-weight: bold;");
+        ui->errorLabel->setText("Pola login i hasło nie mogą być puste!");
+        return;
+    }
+
+    // Wykorzystujemy naszą bazę danych JSON
+    if (dbManager.registerUser(username, password, "student")) {
+        qDebug() << "[Rejestracja] Sukces! Dodano użytkownika:" << username;
+        ui->errorLabel->setStyleSheet("color: green; font-weight: bold;");
+        ui->errorLabel->setText("Konto utworzone! Możesz się zalogować.");
+    } else {
+        qDebug() << "[Rejestracja] Błąd: Użytkownik już istnieje.";
+        ui->errorLabel->setStyleSheet("color: red; font-weight: bold;");
+        ui->errorLabel->setText("Taki użytkownik już istnieje!");
+    }
+}
+
+void MainWindow::on_addTimeButton_clicked()
+{
+    QString newTime = ui->newTimeLineEdit->text();
+    if (newTime.isEmpty()) return;
+
+    // 1. Zmiana w UI
+    ui->availabilityListWidget->addItem(newTime);
+    ui->newTimeLineEdit->clear();
+
+    // 2. Zmiana w pliku JSON
+    QJsonObject myData = dbManager.getUserData(chatTool.getMyName());
+    QJsonArray mySlots = myData["availability"].toArray();
+    mySlots.append(newTime);
+    myData["availability"] = mySlots;
+
+    dbManager.updateUserData(chatTool.getMyName(), myData);
+}
+
+void MainWindow::on_removeTimeButton_clicked()
+{
+    // 1. Pobieramy zaznaczony element na liście UI
+    QListWidgetItem* item = ui->availabilityListWidget->currentItem();
+    if (!item) return;
+
+    QString timeToRemove = item->text();
+    delete item; // Usuwamy fizycznie z interfejsu graficznego
+
+    // 2. Zmiana w pliku JSON (Przepisujemy listę pomijając usunięty element)
+    QJsonObject myData = dbManager.getUserData(chatTool.getMyName());
+    QJsonArray mySlots = myData["availability"].toArray();
+    QJsonArray updatedSlots;
+
+    for (const QJsonValue& val : mySlots) {
+        if (val.toString() != timeToRemove) {
+            updatedSlots.append(val);
+        }
+    }
+
+    myData["availability"] = updatedSlots;
+    dbManager.updateUserData(chatTool.getMyName(), myData);
+}
+

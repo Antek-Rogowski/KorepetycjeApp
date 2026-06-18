@@ -33,6 +33,11 @@ private slots:
 
     void on_searchButton_clicked();
 
+    void on_Zarejestruj_clicked();
+
+    void on_removeTimeButton_clicked();
+    void on_addTimeButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     //AuthManager authManager;
